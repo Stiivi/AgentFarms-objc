@@ -1,0 +1,21 @@
+FarmingKit/dependencies: \
+	AFFarmStore.h \
+	AFFarmStore.m \
+	AFGraphWindow.h \
+	AFColorMap.h \
+	AFGraphWindow.m \
+	AFLatticeView.h \
+	AFColorMap.m \
+	AFGraph.h \
+	AFLatticeView.m \
+	AFGraph.m \
+	AFSequenceGraphElement.h \
+	AFSequenceGraphElement.m \
+	AFGraphElement.h \
+	AFGraphElement.m \
+	AFGeometry.h \
+	AFGraphView.h \
+	AFGeometry.m \
+	AFGraphView.m \
+	AFButtonRow.h \
+	AFButtonRow.m

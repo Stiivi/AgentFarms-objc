@@ -1,0 +1,32 @@
+{
+  ApplicationName = "Farmer";
+  ApplicationDescription = "Agent Farms simulator";
+  ApplicationRelease = "0.1";
+  Authors = ("Stefan Urbanek <urbanek@host.sk>");
+  Copyright = "Copyright (c) 2000 Stefan Urbanek <urbanek@host.sk>";
+  CopyrightDescription = "This program is released under the GNU General Public License"; 
+
+  /* NSIcon = Ink_app; */
+
+  NSTypes = (
+        {
+             NSUnixExtensions = ("afarm");
+             NSName = "afarm";
+             NSHumanReadableName = "AgentFarms Farm State";
+             NSMIMETypes = ("application/af-farm");
+             NSIcon = afarm;
+             NSRole = Editor;
+             NSDocumentClass = AFFarm;
+        },
+        {
+             NSUnixExtensions = ("afmodel");
+             NSName = "afmodel";
+             NSHumanReadableName = "AgentFarms Model";
+             NSMIMETypes = ("application/af-model");
+             NSIcon = afmodel;
+             NSRole = Viewer;
+             NSDocumentClass = AFFarm;
+        }
+
+  );
+}

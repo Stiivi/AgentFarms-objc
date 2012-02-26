@@ -1,0 +1,3 @@
+*.framework
+shared_*obj
+derived_src

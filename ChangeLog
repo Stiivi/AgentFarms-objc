@@ -1,0 +1,92 @@
+2003 Nov 21
+
+    * Added AFButtonRow into FarmViews framework. This is reusable component
+    for AgentFarms applications for module selection.
+
+2003 Nov 3
+
+    * Chaged version
+
+2003 Nov 3
+
+    * Added FarmsViews framework, removed dependency on XY framework.
+
+2003 Oct 13
+
+    * Implemented farm closing
+
+2003 Oct 11
+
+    * AFProbe: better imlpementation of disconnect method. 
+    Probe now retais the target.
+    * Cleaned some memory leaks. 
+    * Implemented simulation restarting.
+    
+    NOTE: Few NSDictionaries are still leaking in the simulator.
+
+2003 Oct 10
+
+    * AgentFarms: added removeDeadObjects to NSArray; added nextLiveObject to
+    NSEnumerator
+
+2003 Oct 7
+
+    * FarmsSimulator: New method -[AFEnvironment objectWithName:]
+
+2003 Oct 5
+
+    * FarmsSimulator: When simulation happens during simlation step,
+    forward it to the simulator observer.
+    * Farmer: handle and log exceptions during simulation step.
+    * Fixed exception handler in afsimulator tool.
+    * Added AFColorMap (likely to be changed)
+    
+2003 Sep 22
+
+    * Added Lattice and LatticeView classes
+    * Fixed AFNumberCollection: added missing dealloc method
+
+2003 Sep 20
+
+    * Version 0.3.1
+
+2003 Sep 20
+
+    * FarmerData: Added network data type (AFNetwork and AFNetworkLink classes)
+
+2003 Sep 18
+
+    * New tool afvalidator for validating models.
+    * FarmsModel: Added helper functions for model validator; added array
+    method for creating arrays of prototypes; added convenience translations
+    * Farmer: fixed opening of a file using gopen or workspace
+
+2003 Jul 24
+
+    * Compiler warnings cleanup
+
+2003 Jul 23
+
+    * Added probes and probe templates. Implemented probing.
+
+2003 Jul 13
+
+    * Prototype 2
+    Note: forget all previous logs
+
+2002 Dec 13
+
+    * Framework/ChangeLog: new file
+
+2002 Dec 11
+
+    * AFGraphManager.m: reload table data on windowDidLoad:
+
+2002 Dec 8
+    
+    * Farmer/AFFarm.m: do not order front the graph manager window on startup;
+    fixed bug in run: where we were calling deprecated method [simulator run]
+
+2002 Nov 27  Stefan Urbanek
+
+    * ChangeLog started

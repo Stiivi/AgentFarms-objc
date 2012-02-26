@@ -1,0 +1,116 @@
+<?xml version="1.0"?>
+<!DOCTYPE gsdoc PUBLIC "-//GNUstep//DTD gsdoc 1.0.0//EN" "http://www.gnustep.org/gsdoc-1_0_0.xml">
+<gsdoc base="AFFarmStore" up="FarmingKit">
+  <head>
+    <title>AFFarmStore class documentation</title>
+    <author name="Stefan Urbanek">
+    </author>
+    <copy>2002 Stefan Urbanek</copy>
+  </head>
+  <body>
+    <front><contents /></front>
+    <chapter>
+      <heading>
+        Software documentation for the AFFarmStore class
+      </heading>
+      <class name="AFFarmStore" super="NSObject">
+        <declared>FarmingKit/AFFarmStore.h</declared>
+        <desc>
+          <em>Description forthcoming.</em>
+        </desc>
+        <method type="id" factory="yes">
+          <sel>storeWithPath:</sel>
+          <arg type="NSString*">aPath</arg>
+          <sel>create:</sel>
+          <arg type="BOOL">flag</arg>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="void">
+          <sel>commit</sel>
+          <desc>
+            Save all objects and property lists. Not used yet,
+            only for saving commit count.
+          </desc>
+        </method>
+        <method type="BOOL">
+          <sel>create</sel>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="id">
+          <sel>initWithPath:</sel>
+          <arg type="NSString*">aPath</arg>
+          <sel>create:</sel>
+          <arg type="BOOL">create</arg>
+          <desc>
+            Init
+          </desc>
+        </method>
+        <method type="id">
+          <sel>objectWithName:</sel>
+          <arg type="NSString*">objectName</arg>
+          <desc>
+            Restore and return an object.
+          </desc>
+        </method>
+        <method type="NSString*">
+          <sel>path</sel>
+          <desc>
+            Returns store path
+          </desc>
+        </method>
+        <method type="NSString*">
+          <sel>pathForObjectWithName:</sel>
+          <arg type="NSString*">aString</arg>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="NSString*">
+          <sel>pathForPropertyListWithName:</sel>
+          <arg type="NSString*">aString</arg>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="id">
+          <sel>propertyListWithName:</sel>
+          <arg type="NSString*">plistName</arg>
+          <desc>
+            Restore and return a property list with given name.
+          </desc>
+        </method>
+        <method type="BOOL">
+          <sel>setPath:</sel>
+          <arg type="NSString*">aPath</arg>
+          <desc>
+            Set store path. Path should not be <code>nil</code> or
+            an empty string. If path does not have
+            <code>.afarm</code> extension, it will be added.
+          </desc>
+        </method>
+        <method type="BOOL">
+          <sel>storeObject:</sel>
+          <arg type="id">anObject</arg>
+          <sel>withName:</sel>
+          <arg type="NSString*">objectName</arg>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="BOOL">
+          <sel>storePropertyList:</sel>
+          <arg type="id">plist</arg>
+          <sel>withName:</sel>
+          <arg type="NSString*">plistName</arg>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+      </class>
+    </chapter>
+  </body>
+</gsdoc>

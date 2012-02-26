@@ -1,0 +1,7 @@
+#!/bin/csh
+
+echo > /tmp/blah/farmer.txt
+
+foreach f (`ls -1 *.h`)
+    cat $f >> /tmp/blah/farmer.txt 
+end

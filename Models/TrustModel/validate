@@ -1,0 +1,1 @@
+plparse Model.plist && make debug=yes && afvalidator TrustModel.afmodel 

@@ -1,0 +1,30 @@
+2003 Jul 13
+
+    * Created prototype 2
+
+2003 Apr 3
+
+    * AFSimulator: moved from framework
+
+2003 Jan 10
+
+    * Controller: newDocument: bugfix after NSDocumentController removal
+    
+2002 Dec 22
+
+    * AFFarm: let it be subclass of NSObject instead of NSDocument; partialy 
+    implemented save: method
+    * Controller: Removed NSDocumentController dependency; added storesDirectory
+    * AFWindowController: handle windowDidBecomeKey to make owning farm current
+    * AFGraphManager: removed windowDidBecomeKey method
+    * AFGraphWindowController: call windowDidBecomeKey in super
+    * AFFarmStore: new file
+
+2002 Dec 13
+
+    * Added relative scale switch into graph inspector panel
+
+2002 Dec 13
+
+    * ChangeLog started
+    

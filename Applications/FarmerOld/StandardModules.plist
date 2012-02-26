@@ -1,0 +1,82 @@
+(
+    {
+        Name  = "Description";
+        Class = "DescriptionWindowController";
+        Icon  = "Description";
+    },
+    {
+        Name = "Prototypes";
+        Class = "PrototypesBrowser";
+        Icon = "Prototypes";
+        Instantiate = NO;
+        VisibleAtLaunchTime = NO;
+
+        ObservedNotifications = (
+            { 
+                Name = AFFarmModelLoadedNotification;
+                Selector = "farmModelLoaded:";
+            }
+        );
+    },
+    {
+        Name = "Objects";
+        Class = "ObjectBrowser";
+        Icon = "Objects";
+        VisibleAtLaunchTime = YES;
+
+        ObservedNotifications = (
+            { 
+                Name = AFFarmTimeAdvancedNotification;
+                Selector = "farmStateChanged:";
+            },
+            { 
+                Name = AFFarmStateChangedNotification;
+                Selector = "farmStateChanged:";
+            }
+        );
+    },
+    {
+        Name = "Collections";
+        Class = "ProbesBrowser";
+        Icon = "Probes";
+        VisibleAtLaunchTime = NO;
+        ObservedNotifications = (
+            { 
+                Name = AFFarmTimeAdvancedNotification;
+                Selector = "farmStateChanged:";
+            },
+            { 
+                Name = AFSimulatorProbesChangedNotification;
+                Selector = "simulatorProbesChanged:";
+            }
+            
+        );
+    },
+    {
+        Name = "Views";
+        Class = "ViewBrowser";
+        Icon = "View";
+        VisibleAtLaunchTime = YES;
+        ObservedNotifications = (
+            { 
+                Name = AFFarmTimeAdvancedNotification;
+                Selector = "updateIfNeeded:";
+            },
+            { 
+                Name = AFFarmDidLaunchNotification;
+                Selector = "updateIfNeeded:";
+            },
+            { 
+                Name = AFFarmDidStopNotification;
+                Selector = "updateIfNeeded:";
+            }
+        );
+    },
+    {
+        Name = "Log";
+        Class = "FarmLog";
+        Icon = "Log";
+        Instantiate = YES;
+        VisibleAtLaunchTime = YES;
+    }
+)

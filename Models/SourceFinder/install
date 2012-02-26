@@ -1,0 +1,1 @@
+rm SourceFinder.afmodel/Resources/Model.plist ; make debug=yes install 

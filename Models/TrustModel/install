@@ -1,0 +1,1 @@
+rm TrustModel.afmodel/Resources/Model.plist ; make debug=yes install 

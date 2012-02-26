@@ -1,0 +1,66 @@
+{
+    Name = "TestRandom";
+    
+    /* Number of default simulation steps on single run */
+    StepTimeUnits = 100;
+    
+/* Classes */
+
+    Classes =
+    {
+        World = 
+        {
+            Attributes = (
+                {
+                    Identifier = initialAgentCount;
+                    Name = "Agent Count";
+                    ForCreation = YES;
+                },
+                {
+                    Identifier = agentCount;
+                    Name = "Agent count"; 
+                    ReadOnly = YES;
+                }
+            );
+            Relationships = (
+                );
+        };
+        
+    };
+    
+/* Prototypes */
+
+    Prototypes = {
+        World = 
+        {
+            Class = World;
+            Attributes = 
+            {
+                initialAgentCount = 10;
+                someVariable = 100.0; 
+            };
+        };
+    };
+
+/* Simulation Objects */
+
+    Objects = 
+    (    
+        { Name = World; Prototype = "World"; },
+    );
+
+/* Connections */
+
+    Connections = 
+    (
+    );
+    
+    Probes = 
+    (
+        {
+            Target = World;
+            Property = agentCount;
+        }
+    );
+
+}

@@ -1,0 +1,134 @@
+{
+    categories = {
+	NSArray = {
+	    AgentFarms = "NSArray+additions";
+	};
+	NSMutableArray = {
+	    AgentFarms = "NSArray+additions";
+	};
+    };
+    category = {
+	"NSArray(AgentFarms)" = "NSArray+additions";
+	"NSMutableArray(AgentFarms)" = "NSArray+additions";
+    };
+    class = {
+	AFAgentAction = AFAgentAction;
+	AFGrid = AFGrid;
+    };
+    method = {
+	"+actionWithName:" = {
+	    AFAgentAction = AFAgentAction;
+	};
+	"+arrayWithObjectsFromPrototype:count:" = {
+	    NSArray = "NSArray+additions";
+	};
+	"-actionDescription" = {
+	    AFAgentAction = AFAgentAction;
+	};
+	"-allObjects" = {
+	    AFGrid = AFGrid;
+	};
+	"-containsObject:" = {
+	    AFGrid = AFGrid;
+	};
+	"-initWithWidth:height:" = {
+	    AFGrid = AFGrid;
+	};
+	"-locationOfObject:" = {
+	    AFGrid = AFGrid;
+	};
+	"-moveObject:direction:" = {
+	    AFGrid = AFGrid;
+	};
+	"-putObject:atLocation:" = {
+	    AFGrid = AFGrid;
+	};
+	"-removeAllObjects" = {
+	    AFGrid = AFGrid;
+	};
+	"-removeDeadObjects" = {
+	    NSMutableArray = "NSArray+additions";
+	};
+	"-removeObject:" = {
+	    AFGrid = AFGrid;
+	};
+	"-setActionDescription:" = {
+	    AFAgentAction = AFAgentAction;
+	};
+	"-setWraps:" = {
+	    AFGrid = AFGrid;
+	};
+	"-wraps" = {
+	    AFGrid = AFGrid;
+	};
+    };
+    output = {
+	AFAgentAction.h = (
+	    ../Documentation/AgentFarms/AFAgentAction.gsdoc,
+	    ../Documentation/AgentFarms/Variables.gsdoc
+	);
+	AFGrid.h = (
+	    ../Documentation/AgentFarms/AFGrid.gsdoc
+	);
+	"NSArray+additions.h" = (
+	    "../Documentation/AgentFarms/NSArray+additions.gsdoc"
+	);
+    };
+    source = {
+	AFAgentAction.h = (
+	    AFAgentAction.m
+	);
+	AFGrid.h = (
+	    AFGrid.m
+	);
+	"NSArray+additions.h" = (
+	    "NSArray+additions.m"
+	);
+	"NSEnumerator+additions.m" = (
+	    "NSEnumerator+additions.m"
+	);
+    };
+    super = {
+	AFAgentAction = NSObject;
+	AFGrid = NSObject;
+    };
+    title = {
+	AFAgentAction = "AFAgentAction class documentation";
+	AFGrid = "AFGrid class documentation";
+	AgentFarms = AgentFarms;
+	"NSArray+additions" = "NSArray+additions autogsdoc generated documentation";
+	Types = Typedefs;
+	Variables = Variables;
+    };
+    type = {
+	AFGridDirection = Types;
+    };
+    unitmethods = {
+	AFAgentAction = {
+	    "+actionWithName:" = AFAgentAction;
+	    "-actionDescription" = AFAgentAction;
+	    "-setActionDescription:" = AFAgentAction;
+	};
+	AFGrid = {
+	    "-allObjects" = AFGrid;
+	    "-containsObject:" = AFGrid;
+	    "-initWithWidth:height:" = AFGrid;
+	    "-locationOfObject:" = AFGrid;
+	    "-moveObject:direction:" = AFGrid;
+	    "-putObject:atLocation:" = AFGrid;
+	    "-removeAllObjects" = AFGrid;
+	    "-removeObject:" = AFGrid;
+	    "-setWraps:" = AFGrid;
+	    "-wraps" = AFGrid;
+	};
+	"NSArray(AgentFarms)" = {
+	    "+arrayWithObjectsFromPrototype:count:" = "NSArray+additions";
+	};
+	"NSMutableArray(AgentFarms)" = {
+	    "-removeDeadObjects" = "NSArray+additions";
+	};
+    };
+    variable = {
+	AFUnknownAgentAction = Variables;
+    };
+}

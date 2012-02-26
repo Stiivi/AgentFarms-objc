@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<!DOCTYPE gsdoc PUBLIC "-//GNUstep//DTD gsdoc 1.0.0//EN" "http://www.gnustep.org/gsdoc-1_0_0.xml">
+<gsdoc base="AFLatticeView" up="FarmingKit">
+  <head>
+    <title>AFLatticeView class documentation</title>
+    <author name="Stefan Urbanek">
+      <email address="urbanek@host.sk">
+        urbanek@host.sk
+      </email>
+    </author>
+    <copy>2003 Stefan Urbanek</copy>
+  </head>
+  <body>
+    <front><contents /></front>
+    <chapter>
+      <heading>
+        Software documentation for the AFLatticeView class
+      </heading>
+      <class name="AFLatticeView" super="NSView">
+        <declared>FarmingKit/AFLatticeView.h</declared>
+        <desc>
+          <em>Description forthcoming.</em>
+        </desc>
+        <method type="AFColorMap*">
+          <sel>colorMap</sel>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="AFLattice*">
+          <sel>lattice</sel>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="void">
+          <sel>setColorMap:</sel>
+          <arg type="AFColorMap*">map</arg>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="void">
+          <sel>setLattice:</sel>
+          <arg type="AFLattice*">aLattice</arg>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+      </class>
+    </chapter>
+  </body>
+</gsdoc>

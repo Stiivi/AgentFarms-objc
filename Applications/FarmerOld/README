@@ -1,0 +1,9 @@
+StandardModules.plist - describes standard farmer modules
+    ObjectBrowser
+    PrototypeBrowser
+    Description window
+    Log window
+    
+Probe info
+    ObjectReference
+    Property

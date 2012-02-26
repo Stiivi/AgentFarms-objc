@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE gsdoc PUBLIC "-//GNUstep//DTD gsdoc 1.0.0//EN" "http://www.gnustep.org/gsdoc-1_0_0.xml">
+<gsdoc base="AFSequenceGraphElement" up="FarmingKit">
+  <head>
+    <title>AFSequenceGraphElement class documentation</title>
+    <author name="Stefan Urbanek">
+      <email address="urbanek@host.sk">
+        urbanek@host.sk
+      </email>
+    </author>
+    <copy>2002 Stefan Urbanek</copy>
+  </head>
+  <body>
+    <front><contents /></front>
+    <chapter>
+      <heading>
+        Software documentation for the AFSequenceGraphElement
+        class
+      </heading>
+      <class name="AFSequenceGraphElement" super="AFGraphElement">
+        <declared>FarmingKit/AFSequenceGraphElement.h</declared>
+        <desc>
+          <em>Description forthcoming.</em>
+        </desc>
+        <method type="id" factory="yes">
+          <sel>elementWithCollection:</sel>
+          <arg type="AFNumberCollection*">aCollection</arg>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="AFNumberCollection*">
+          <sel>collection</sel>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="id">
+          <sel>initWithCollection:</sel>
+          <arg type="AFNumberCollection*">aCollection</arg>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+      </class>
+    </chapter>
+  </body>
+</gsdoc>

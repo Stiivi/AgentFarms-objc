@@ -1,0 +1,26 @@
+Simulation
+----------
+
+See model template in Models/Template
+
+You have to implement following method in each simulation root object:
+    - (void)step
+
+You may implement following methods to be able to save simulation state:
+    - (void)encodeWithCoder:(NSCoder *)aCoder
+    - (id)initWithCoder:(NSCoder *)aDecoder
+
+You may implement:
+    - (void)initWithPrototype:(AFObjectPrototype *)prototype;
+    - (void)awakeWithPrototype:(AFObjectPrototype *)prototype;
+
+You write simulation body in method 'step'.
+
+To be able to save and restore simulation state, methods 'encodeWithCoder:'
+and 'initWithCoder:' have to be implemented. This is also needed for transfering 
+simulation to another simulator.
+
+
+To get simulation evnironment use [self environment] in any simulation object.
+
+Note: there should be only one simulation running per thread.

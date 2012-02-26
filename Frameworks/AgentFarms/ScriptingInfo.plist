@@ -1,0 +1,37 @@
+/* 
+    ScriptingInfo for XY Framework
+
+    Author: Stefan Urbanek <urbanek@host.sk>
+    Date: 2003 May 10
+*/
+
+{
+    Classes = 
+    (
+        AFAgentAction,
+        AFAttributeDescription,
+        AFClassDescription,
+        AFCollectionDescription,
+        AFDistantSimulator,
+        AFEnvironment,
+        AFGraphInfo,
+        AFGrid,
+        AFLattice,
+        AFModel,
+        AFModelBundle,
+        AFNetwork,
+        AFNetworkLink,
+        AFNumberCollection,
+        AFObjectConnection,
+        AFObjectDescription,
+        AFObjectPrototype,
+        AFProbe,
+        AFProbeSpecification,
+        AFProperty,
+        AFPropertyList,
+        AFRelationshipDescription,
+        AFResourceManager,
+        AFSimulation,
+        AFSimulator
+    )
+}

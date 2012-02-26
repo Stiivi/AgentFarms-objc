@@ -1,0 +1,75 @@
+    NSString    *filePath;
+    ModulesView *view;
+    
+    /* Farm */
+
+    AFDistantSimulator *simulator; 
+        -  recreate on load
+    AFModel            *model;
+        - save in model
+    AFModelBundle      *modelBundle;
+        - recreate
+    NSString           *modelName;
+        - save
+    NSString           *modelPath;
+        - recreate
+
+    /* State */
+
+    int          farmState;
+    BOOL         stopRequested;
+    BOOL         isFastForwarding;
+
+    /* Gui */
+
+    NSWindow           *farmWindow;
+    NSButton           *runButton;
+    NSButton           *forwardButton;
+    NSButton           *restartButton;
+    NSTextField        *timeField;       
+    ModulesView        *modulesView;
+
+    NSStepper   *stepCountStepper;
+    NSTextField *stepCountField;
+    
+    NSDictionary *lastProperties;
+    
+    NSDate       *lastStepTime;
+
+    /* Farm assistants */
+    FarmLog            *farmLog;
+
+    NSMutableArray     *modules;
+}
+
+- initWithModelName:(NSString *)name;
+- (void)setLog:(FarmLog *)aLog;
+- initWithModel:(id)name;
+
+/* Model */
+- (AFModel *)model;
+- (NSString *)name;
+
+- (id<AFSimulator>)simulator;
+
+/* Actions */
+- (void)restart:(id)sender;
+- (void)run: (id)sender;
+- (void)watch:(id)sender;
+- (void)orderFrontFarmWindow:(id)sender;
+
+/* Simulator/simulation controll */
+- (void)launchSimulation;
+- (void)restartSimulation;
+- (void)connectToSimulator;
+
+/* State */
+- (void)setFarmState:(int)newState;
+- (int)farmState;
+- (BOOL)isLaunched;
+
+/* Logging */
+- (void)log:(NSString*)format,...;
+- (void)logError:(NSString*)format,...;
+- (void)logWarning:(NSString*)format,...;
+@end

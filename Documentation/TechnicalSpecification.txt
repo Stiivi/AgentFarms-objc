@@ -1,0 +1,15 @@
+Technical Specification
+-----------------------
+
+Threads
+
+Simulation is run in separate thread. Each time user requests to run a
+simulation for several steps, new thread is detached, set up and run. For
+simulation thread a simulation evnironment is set. All objects from simulation
+can refer to the environment if they need to:
+
+    - get an object prototype
+    - get named object
+    - register object with name
+    
+Simulator is using environment for storing object references during simulation.

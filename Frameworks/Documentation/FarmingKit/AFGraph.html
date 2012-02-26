@@ -1,0 +1,147 @@
+<html>
+
+    <head>
+    <title>AFGraph class documentation</title>
+  </head>
+  <body>
+    <a href="FarmingKit.html">Up</a>
+    <br />
+    <h1><a name="title$AFGraph">AFGraph class documentation</a></h1>
+    <h3>Authors</h3>
+    <dl>
+      <dt>Stefan Urbanek (<a href="mailto:urbanek@host.sk"><code>urbanek@host.sk</code></a>)</dt>
+      <dd>
+      </dd>
+    </dl>
+    <p><b>Copyright:</b> (C) 2002 Stefan Urbanek</p>
+
+        <div>
+    </div>
+
+          <h1><a name="001000000000">
+        Software documentation for the AFGraph class
+      </a></h1>
+    <h2><a name="class$AFGraph">AFGraph</a> : NSView</h2>
+    <blockquote>
+      <dl>
+        <dt><b>Declared in:</b></dt>
+        <dd>FarmingKit/AFGraph.h</dd>
+      </dl>
+    </blockquote>
+    <p>
+      
+          <em>Description forthcoming.</em>
+        
+    </p>
+    <b>Method summary</b>
+    <ul>
+      <li><a rel="gsdoc" href="AFGraph.html#method$AFGraph-addElement:">-addElement:</a></li>
+      <li><a rel="gsdoc" href="AFGraph.html#method$AFGraph-drawInRect:graphWindow:">-drawInRect:graphWindow:</a></li>
+      <li><a rel="gsdoc" href="AFGraph.html#method$AFGraph-elements">-elements</a></li>
+      <li><a rel="gsdoc" href="AFGraph.html#method$AFGraph-relativeScale">-relativeScale</a></li>
+      <li><a rel="gsdoc" href="AFGraph.html#method$AFGraph-removeAllElements">-removeAllElements</a></li>
+      <li><a rel="gsdoc" href="AFGraph.html#method$AFGraph-removeElement:">-removeElement:</a></li>
+      <li><a rel="gsdoc" href="AFGraph.html#method$AFGraph-setElements:">-setElements:</a></li>
+      <li><a rel="gsdoc" href="AFGraph.html#method$AFGraph-setRelativeScale:">-setRelativeScale:</a></li>
+      <li><a rel="gsdoc" href="AFGraph.html#method$AFGraph-setTitle:">-setTitle:</a></li>
+      <li><a rel="gsdoc" href="AFGraph.html#method$AFGraph-title">-title</a></li>
+    </ul>
+    <hr width="50%" align="left" />
+    <h3><a name="method$AFGraph-addElement:">addElement:</a></h3>
+    - (void) <b>addElement:</b> (<a rel="gsdoc" href="AFGraphElement.html#class$AFGraphElement">AFGraphElement</a>*)element;<br />
+    <p>
+      
+            Adds <var>element</var> to the list of receiver&apos;s
+            graph elements and notifies associated graph legend
+            view with graphViewDidChangeGraphs:self
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$AFGraph-drawInRect:graphWindow:">drawInRect:graphWindow:</a></h3>
+    - (void) <b>drawInRect:</b> (NSRect)frame<b> graphWindow:</b> (<a rel="gsdoc" href="AFGeometry.html#class$AFRect">AFRect</a>*)windowRect;<br />
+    <p>
+      
+            <em>Description forthcoming.</em>
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$AFGraph-elements">elements</a></h3>
+    - (NSArray*) <b>elements</b>;<br />
+    <p>
+      
+            <em>Description forthcoming.</em>
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$AFGraph-relativeScale">relativeScale</a></h3>
+    - (BOOL) <b>relativeScale</b>;<br />
+    <p>
+      
+            Returns whether graph elements are drawn in
+            relative scale.
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$AFGraph-removeAllElements">removeAllElements</a></h3>
+    - (void) <b>removeAllElements</b>;<br />
+    <p>
+      
+            Removes all elements of receiver and notifies
+            associated graph legend view with
+            graphViewDidChangeGraphs:self
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$AFGraph-removeElement:">removeElement:</a></h3>
+    - (void) <b>removeElement:</b> (<a rel="gsdoc" href="AFGraphElement.html#class$AFGraphElement">AFGraphElement</a>*)element;<br />
+    <p>
+      
+            Removes <var>element</var> from the list of
+            receiver&apos;s graph elements and notifies
+            associated graph legend view with
+            graphViewDidChangeGraphs:self
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$AFGraph-setElements:">setElements:</a></h3>
+    - (void) <b>setElements:</b> (NSArray*)array;<br />
+    <p>
+      
+            Sets all elements of receiver to be <var>array</var>
+            and notifies associated graph legend view with
+            graphViewDidChangeGraphs:self
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$AFGraph-setRelativeScale:">setRelativeScale:</a></h3>
+    - (void) <b>setRelativeScale:</b> (BOOL)flag;<br />
+    <p>
+      
+            Enable relative scaling when <var>flag</var> is
+            <code>YES</code>. Relative scaling means that all
+            elements are drawn in different scales, so they
+            minimum values are drawn as equal, same for maximum
+            values.
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$AFGraph-setTitle:">setTitle:</a></h3>
+    - (void) <b>setTitle:</b> (NSString*)aString;<br />
+    <p>
+      
+            Set graph title to <var>aString</var>
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$AFGraph-title">title</a></h3>
+    - (NSString*) <b>title</b>;<br />
+    <p>
+      
+            Returns graph title
+          
+    </p>
+    <hr width="25%" align="left" />
+    <br />
+    <a href="FarmingKit.html">Up</a>
+  </body>
+</html>

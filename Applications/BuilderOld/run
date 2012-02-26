@@ -1,0 +1,4 @@
+# setenv NSZombieEnabled YES
+killall afsimulator
+touch *.gorm
+make debug=yes && openapp FarmBuilder.debug

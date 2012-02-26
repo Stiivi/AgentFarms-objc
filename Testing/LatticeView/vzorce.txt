@@ -1,0 +1,35 @@
+mas 2 sily, jedna jje umerna stvorcu vzdialenosti a vzdy pritazliva (mas tam
+hmotnosti a nejaku konstantu, cize dokopy nejaku vhodne zvolenu konstantu ;-)
+
+To je gravitacia
+
+Druha je umerna vzdialenosti od kludovej polohy, takze
+
+r - r_0, kde r_0 je vhodne zvolena.
+
+Okrem toho mas tlmenie, ie. nieco umerne rychlosti pohybu a zaporne...
+
+
+dokopy (a je zrychlenie, v je rychlost, r je poloha)
+
+k_{1, 2, 3} su konstanty ;-)
+
+a = -\frac{k_1}{r^2} + k_2(r_0 - r) - k_3 v
+
+
+a = \frac{d^2}{dt^2}r
+v = \frac{dr}{dt}
+
+Message from frankie
+Thu Sep 18 21:22:54 2003 [----]
+
+Podla mna by si sa na tu gravitaciu (ten clen s r^{-2}) mohol vykaslat a aj tak
+by to fungovalo.
+
+...konstanty budes musiet doladit...ale cim vacsie k_1 a k_2, tym rychlejsie,
+cim vacsie k_3, tym pomalsie, pre dane k_1 a k_2 sa da najst take k_3, aby sa
+to ustalilo velmi rychlo, blbe je, ze neviem, ako (ale spocitam to...)
+
+...a ak mas plotutils, pri optimalizacii ti prudko pomoze ode (ordinary
+differenntial equation plotter)
+

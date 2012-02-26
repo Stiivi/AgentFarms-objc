@@ -1,0 +1,2 @@
+touch English.lproj/*.gorm
+make debug=yes && openapp Modeller.debug

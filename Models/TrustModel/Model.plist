@@ -1,0 +1,244 @@
+{
+    Name = "Trust";
+    Version = 1;
+    
+    StepTimeUnits = 2;
+    
+/* Classes */
+
+    Classes =
+    {
+        TrustModelWorld = 
+        {
+            Attributes = (
+                {
+                    Identifier = initialAgentCount;
+                    Name = "Agent count"; 
+                    ForCreation = YES;
+                },
+                {
+                    Identifier = agentCount;
+                    Name = "Agent count"; 
+                    ReadOnly = YES;
+                },
+                {
+                    Identifier = "rewardPayoff";
+                    Name ="Payoff: Reward"; 
+                },
+                {   
+                    Identifier = "suckersPayoff";
+                    Name ="Payoff: Sucker's"; 
+                },
+                {
+                    Identifier = "temptationPayoff";
+                    Name ="Payoff: Temptation"; 
+                },
+                {
+                    Identifier = "punishmentPayoff";
+                    Name ="Payoff: Punishment"; 
+                },
+                {
+                    Identifier = "interactionCost";
+                    Name ="Interaction cost"; 
+                },
+/*                {
+                    Identifier = deadAgents;
+                    Name = "Dead Agents";
+                    ReadOnly = YES;
+                },
+                {
+                    Identifier = bornAgents;
+                    Name = "Born Agents";
+                    ReadOnly = YES;
+                },*/
+                {
+                    Identifier = cooperativeness;
+                    Name = "Cooperativeness";
+                    ReadOnly = YES;
+                },
+                {
+                    Identifier = averageEnergy;
+                    Name = "Average energy";
+                    ReadOnly = YES;
+                }
+            );
+            Relationships = (
+                    {
+                        Identifier = agents;
+                        Name = "agents"; 
+                        Type = Collection;
+                        Class = Agent;
+                    },
+                    {
+                        Identifier = links;
+                        Name = "links"; 
+                        Type = Collection;
+                        Class = TrustCouple;
+                    }
+                );
+        };
+        
+        TrustAgent =
+        {
+            Attributes = 
+            (
+                {
+                    Identifier = energy;
+                    Name = "Energy";
+                },
+                {
+                    Identifier = memorySize;
+                    Name = "Memory Size";
+                    ReadOnly = YES;
+                }
+                /*
+                {
+                    Identifier = tripLength;
+                    Name = "Trip Length"; 
+                    ReadOnly = YES;
+                }*/
+            )
+        };
+        TrustCouple = 
+        {
+            Relationships = (
+                    {
+                        Identifier = leftRelationship;
+                        Name = "left relationship"; 
+                    },
+                    {
+                        Identifier = rightRelationship;
+                        Name = "right relationship";
+                    },
+                    {
+                        Identifier = leftAgent;
+                        Name = "left agent"; 
+                    },
+                    {
+                        Identifier = rightAgent;
+                        Name = "right agent";
+                    }
+                );
+        };
+        TrustRelationship =
+        {
+            Attributes = 
+            (
+                {
+                    Identifier = trustToOther;
+                    Name = "trust to other";
+                    ReadOnly = YES;
+                },
+                {
+                    Identifier = trustFromOther;
+                    Name = "trust from other";
+                    ReadOnly = YES;
+                },
+            );
+
+            Relationships = (
+                );
+        }
+        
+    };
+    
+/* Objects */
+
+    Prototypes = {
+        World = {
+            Class = TrustModelWorld;
+            Attributes = {
+                initialAgentCount = 20;
+
+                interactionCost   = 2;
+                rewardPayoff      = 3;
+                suckersPayoff     = 0;
+                temptationPayoff  = 5;
+                punishmentPayoff  = 1;
+            };
+        };
+        Agent = 
+        {
+            Class = TrustAgent;
+            Attributes = 
+            {
+                energy     = 500;
+                memorySize = 50;
+            };
+        };
+    };
+
+/*    Collections = {
+        Population = 
+        {
+            Type = Collection;
+            Prototype = Agent;
+            Count = 100;
+        };
+    };
+*/
+/* Named Objects */
+    Objects = 
+    (    
+        { Name = World; Prototype = "World"; },
+    );
+
+/* Connections */
+/*
+    Connections = 
+    (
+        {
+            Source = World;
+            Destination = World;
+            Relationship = agents;
+        }
+    );
+*/
+    RootObject = World;
+
+    Probes = 
+    (
+        {
+            Target = World;
+            Property = agentCount;
+        },
+        /*{
+            Target = World;
+            Property = deadAgents;
+        },
+        {
+            Target = World;
+            Property = bornAgents;
+        },*/
+        {
+            Target = World;
+            Property = averageEnergy;
+        },
+        {
+            Target = World;
+            Property = cooperativeness;
+        }
+        
+    );
+
+
+    Views = (
+        {
+            Target = World;
+            Name = "Strategy distribution";
+            Identifier = strategyDistributionLattice;
+            Type = Lattice;
+        },
+        {
+            Target = World;
+            Name = "Equality distribution";
+            Identifier = equalityDistributionLattice;
+            Type = Lattice;
+        }
+    );
+    
+    Authors = ("Stefan Urbanek <urbanek@host.sk>");
+    ShortDescription = "Blah";
+    Version = "1.0";
+    Copyright = ("(c)2002-2003, Stefan Urbanek");
+}

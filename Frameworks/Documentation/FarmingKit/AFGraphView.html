@@ -1,0 +1,372 @@
+<html>
+
+    <head>
+    <title>AFGraphView class documentation</title>
+  </head>
+  <body>
+    <a href="FarmingKit.html">Up</a>
+    <br />
+    <h1><a name="title$AFGraphView">AFGraphView class documentation</a></h1>
+    <h3>Authors</h3>
+    <dl>
+      <dt>Stefan Urbanek (<a href="mailto:urbanek@host.sk"><code>urbanek@host.sk</code></a>)</dt>
+      <dd>
+      </dd>
+    </dl>
+    <p><b>Copyright:</b> (C) 2002 Stefan Urbanek</p>
+
+        <div>
+    </div>
+
+          <h1><a name="001000000000">
+        Software documentation for the AFGraphView class
+      </a></h1>
+    <h2><a name="class$AFGraphView">AFGraphView</a> : NSView</h2>
+    <blockquote>
+      <dl>
+        <dt><b>Declared in:</b></dt>
+        <dd>FarmingKit/AFGraphView.h</dd>
+      </dl>
+    </blockquote>
+    <p>
+      
+          <em>Description forthcoming.</em>
+        
+    </p>
+    <b>Method summary</b>
+    <ul>
+      <li><a rel="gsdoc" href="AFGraphView.html#method$AFGraphView-addElement:">-addElement:</a></li>
+      <li><a rel="gsdoc" href="AFGraphView.html#method$AFGraphView-autosizesPadding">-autosizesPadding</a></li>
+      <li><a rel="gsdoc" href="AFGraphView.html#method$AFGraphView-autosizesRuler">-autosizesRuler</a></li>
+      <li><a rel="gsdoc" href="AFGraphView.html#method$AFGraphView-backgroundColor">-backgroundColor</a></li>
+      <li><a rel="gsdoc" href="AFGraphView.html#method$AFGraphView-drawsBackground">-drawsBackground</a></li>
+      <li><a rel="gsdoc" href="AFGraphView.html#method$AFGraphView-drawsGrid">-drawsGrid</a></li>
+      <li><a rel="gsdoc" href="AFGraphView.html#method$AFGraphView-elements">-elements</a></li>
+      <li><a rel="gsdoc" href="AFGraphView.html#method$AFGraphView-graph">-graph</a></li>
+      <li><a rel="gsdoc" href="AFGraphView.html#method$AFGraphView-gridColor">-gridColor</a></li>
+      <li><a rel="gsdoc" href="AFGraphView.html#method$AFGraphView-legendVisible">-legendVisible</a></li>
+      <li><a rel="gsdoc" href="AFGraphView.html#method$AFGraphView-paddingSize">-paddingSize</a></li>
+      <li><a rel="gsdoc" href="AFGraphView.html#method$AFGraphView-removeAllElements">-removeAllElements</a></li>
+      <li><a rel="gsdoc" href="AFGraphView.html#method$AFGraphView-removeElement:">-removeElement:</a></li>
+      <li><a rel="gsdoc" href="AFGraphView.html#method$AFGraphView-rulerColor">-rulerColor</a></li>
+      <li><a rel="gsdoc" href="AFGraphView.html#method$AFGraphView-rulerFont">-rulerFont</a></li>
+      <li><a rel="gsdoc" href="AFGraphView.html#method$AFGraphView-rulerSize">-rulerSize</a></li>
+      <li><a rel="gsdoc" href="AFGraphView.html#method$AFGraphView-rulerVisible">-rulerVisible</a></li>
+      <li><a rel="gsdoc" href="AFGraphView.html#method$AFGraphView-scalesGraphToFit">-scalesGraphToFit</a></li>
+      <li><a rel="gsdoc" href="AFGraphView.html#method$AFGraphView-setAutosizesPadding:">-setAutosizesPadding:</a></li>
+      <li><a rel="gsdoc" href="AFGraphView.html#method$AFGraphView-setAutosizesRuler:">-setAutosizesRuler:</a></li>
+      <li><a rel="gsdoc" href="AFGraphView.html#method$AFGraphView-setBackgroundColor:">-setBackgroundColor:</a></li>
+      <li><a rel="gsdoc" href="AFGraphView.html#method$AFGraphView-setDrawsBackground:">-setDrawsBackground:</a></li>
+      <li><a rel="gsdoc" href="AFGraphView.html#method$AFGraphView-setDrawsGrid:">-setDrawsGrid:</a></li>
+      <li><a rel="gsdoc" href="AFGraphView.html#method$AFGraphView-setElements:">-setElements:</a></li>
+      <li><a rel="gsdoc" href="AFGraphView.html#method$AFGraphView-setGraph:">-setGraph:</a></li>
+      <li><a rel="gsdoc" href="AFGraphView.html#method$AFGraphView-setGridColor:">-setGridColor:</a></li>
+      <li><a rel="gsdoc" href="AFGraphView.html#method$AFGraphView-setLegendVisible:">-setLegendVisible:</a></li>
+      <li><a rel="gsdoc" href="AFGraphView.html#method$AFGraphView-setPaddingSize:">-setPaddingSize:</a></li>
+      <li><a rel="gsdoc" href="AFGraphView.html#method$AFGraphView-setRulerColor:">-setRulerColor:</a></li>
+      <li><a rel="gsdoc" href="AFGraphView.html#method$AFGraphView-setRulerFont:">-setRulerFont:</a></li>
+      <li><a rel="gsdoc" href="AFGraphView.html#method$AFGraphView-setRulerSize:">-setRulerSize:</a></li>
+      <li><a rel="gsdoc" href="AFGraphView.html#method$AFGraphView-setRulerVisible:">-setRulerVisible:</a></li>
+      <li><a rel="gsdoc" href="AFGraphView.html#method$AFGraphView-setScalesGraphToFit:">-setScalesGraphToFit:</a></li>
+      <li><a rel="gsdoc" href="AFGraphView.html#method$AFGraphView-setTitle:">-setTitle:</a></li>
+      <li><a rel="gsdoc" href="AFGraphView.html#method$AFGraphView-title">-title</a></li>
+    </ul>
+    <hr width="50%" align="left" />
+    <h3><a name="method$AFGraphView-addElement:">addElement:</a></h3>
+    - (void) <b>addElement:</b> (<a rel="gsdoc" href="AFGraphElement.html#class$AFGraphElement">AFGraphElement</a>*)element;<br />
+    <p>
+      
+            Adds <var>element</var> to the list of receiver&apos;s
+            graph elements and notifies associated graph legend
+            view with graphViewDidChangeGraphs:self
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$AFGraphView-autosizesPadding">autosizesPadding</a></h3>
+    - (BOOL) <b>autosizesPadding</b>;<br />
+    <p>
+      
+            <em>Description forthcoming.</em>
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$AFGraphView-autosizesRuler">autosizesRuler</a></h3>
+    - (BOOL) <b>autosizesRuler</b>;<br />
+    <p>
+      
+            <em>Description forthcoming.</em>
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$AFGraphView-backgroundColor">backgroundColor</a></h3>
+    - (NSColor*) <b>backgroundColor</b>;<br />
+    <p>
+      
+            <em>Description forthcoming.</em>
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$AFGraphView-drawsBackground">drawsBackground</a></h3>
+    - (BOOL) <b>drawsBackground</b>;<br />
+    <p>
+      
+            <em>Description forthcoming.</em>
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$AFGraphView-drawsGrid">drawsGrid</a></h3>
+    - (BOOL) <b>drawsGrid</b>;<br />
+    <p>
+      
+            Returns <code>YES</code> if the grid is drawn under
+            the graph elements.
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$AFGraphView-elements">elements</a></h3>
+    - (NSArray*) <b>elements</b>;<br />
+    <p>
+      
+            <em>Description forthcoming.</em>
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$AFGraphView-graph">graph</a></h3>
+    - (<a rel="gsdoc" href="AFGraph.html#class$AFGraph">AFGraph</a>*) <b>graph</b>;<br />
+    <p>
+      
+            Returns displayed graph.
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$AFGraphView-gridColor">gridColor</a></h3>
+    - (NSColor*) <b>gridColor</b>;<br />
+    <p>
+      
+            Returns the color of the grid.
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$AFGraphView-legendVisible">legendVisible</a></h3>
+    - (BOOL) <b>legendVisible</b>;<br />
+    <p>
+      
+            <em>Description forthcoming.</em>
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$AFGraphView-paddingSize">paddingSize</a></h3>
+    - (NSSize) <b>paddingSize</b>;<br />
+    <p>
+      
+            <em>Description forthcoming.</em>
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$AFGraphView-removeAllElements">removeAllElements</a></h3>
+    - (void) <b>removeAllElements</b>;<br />
+    <p>
+      
+            Removes all elements of receiver and notifies
+            associated graph legend view with
+            graphViewDidChangeGraphs:self
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$AFGraphView-removeElement:">removeElement:</a></h3>
+    - (void) <b>removeElement:</b> (<a rel="gsdoc" href="AFGraphElement.html#class$AFGraphElement">AFGraphElement</a>*)element;<br />
+    <p>
+      
+            Removes <var>element</var> from the list of
+            receiver&apos;s graph elements and notifies
+            associated graph legend view with
+            graphViewDidChangeGraphs:self
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$AFGraphView-rulerColor">rulerColor</a></h3>
+    - (NSColor*) <b>rulerColor</b>;<br />
+    <p>
+      
+            <em>Description forthcoming.</em>
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$AFGraphView-rulerFont">rulerFont</a></h3>
+    - (NSFont*) <b>rulerFont</b>;<br />
+    <p>
+      
+            <em>Description forthcoming.</em>
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$AFGraphView-rulerSize">rulerSize</a></h3>
+    - (NSSize) <b>rulerSize</b>;<br />
+    <p>
+      
+            <em>Description forthcoming.</em>
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$AFGraphView-rulerVisible">rulerVisible</a></h3>
+    - (BOOL) <b>rulerVisible</b>;<br />
+    <p>
+      
+            <em>Description forthcoming.</em>
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$AFGraphView-scalesGraphToFit">scalesGraphToFit</a></h3>
+    - (BOOL) <b>scalesGraphToFit</b>;<br />
+    <p>
+      
+            Return whether graph view scales graph window to fit
+            all graph elements.
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$AFGraphView-setAutosizesPadding:">setAutosizesPadding:</a></h3>
+    - (void) <b>setAutosizesPadding:</b> (BOOL)flag;<br />
+    <p>
+      
+            <em>Description forthcoming.</em>
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$AFGraphView-setAutosizesRuler:">setAutosizesRuler:</a></h3>
+    - (void) <b>setAutosizesRuler:</b> (BOOL)flag;<br />
+    <p>
+      
+            <em>Description forthcoming.</em>
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$AFGraphView-setBackgroundColor:">setBackgroundColor:</a></h3>
+    - (void) <b>setBackgroundColor:</b> (NSColor*)color;<br />
+    <p>
+      
+            <em>Description forthcoming.</em>
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$AFGraphView-setDrawsBackground:">setDrawsBackground:</a></h3>
+    - (void) <b>setDrawsBackground:</b> (BOOL)flag;<br />
+    <p>
+      
+            <em>Description forthcoming.</em>
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$AFGraphView-setDrawsGrid:">setDrawsGrid:</a></h3>
+    - (void) <b>setDrawsGrid:</b> (BOOL)flag;<br />
+    <p>
+      
+            If <var>flag</var> is <code>YES</code> then grid is
+            drawn under the graph elements.
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$AFGraphView-setElements:">setElements:</a></h3>
+    - (void) <b>setElements:</b> (NSArray*)array;<br />
+    <p>
+      
+            Sets all elements of receiver to be <var>array</var>
+            and notifies associated graph legend view with
+            graphViewDidChangeGraphs:self
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$AFGraphView-setGraph:">setGraph:</a></h3>
+    - (void) <b>setGraph:</b> (<a rel="gsdoc" href="AFGraph.html#class$AFGraph">AFGraph</a>*)aGraph;<br />
+    <p>
+      
+            Sets a graph to be displayed.
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$AFGraphView-setGridColor:">setGridColor:</a></h3>
+    - (void) <b>setGridColor:</b> (NSColor*)color;<br />
+    <p>
+      
+            Sets <var>color</var> of the grid.
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$AFGraphView-setLegendVisible:">setLegendVisible:</a></h3>
+    - (void) <b>setLegendVisible:</b> (BOOL)flag;<br />
+    <p>
+      
+            <em>Description forthcoming.</em>
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$AFGraphView-setPaddingSize:">setPaddingSize:</a></h3>
+    - (void) <b>setPaddingSize:</b> (NSSize)size;<br />
+    <p>
+      
+            <em>Description forthcoming.</em>
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$AFGraphView-setRulerColor:">setRulerColor:</a></h3>
+    - (void) <b>setRulerColor:</b> (NSColor*)color;<br />
+    <p>
+      
+            <em>Description forthcoming.</em>
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$AFGraphView-setRulerFont:">setRulerFont:</a></h3>
+    - (void) <b>setRulerFont:</b> (NSFont*)font;<br />
+    <p>
+      
+            <em>Description forthcoming.</em>
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$AFGraphView-setRulerSize:">setRulerSize:</a></h3>
+    - (void) <b>setRulerSize:</b> (NSSize)size;<br />
+    <p>
+      
+            Set <var>size</var>
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$AFGraphView-setRulerVisible:">setRulerVisible:</a></h3>
+    - (void) <b>setRulerVisible:</b> (BOOL)flag;<br />
+    <p>
+      
+            <em>Description forthcoming.</em>
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$AFGraphView-setScalesGraphToFit:">setScalesGraphToFit:</a></h3>
+    - (void) <b>setScalesGraphToFit:</b> (BOOL)flag;<br />
+    <p>
+      
+            If <var>flag</var> is <code>YES</code> then graph window
+            is scaled to fit all graph elements. If set to
+            <code>NO</code>, then graph window is used.
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$AFGraphView-setTitle:">setTitle:</a></h3>
+    - (void) <b>setTitle:</b> (NSString*)aString;<br />
+    <p>
+      
+            <em>Description forthcoming.</em>
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$AFGraphView-title">title</a></h3>
+    - (NSString*) <b>title</b>;<br />
+    <p>
+      
+            <em>Description forthcoming.</em>
+          
+    </p>
+    <hr width="25%" align="left" />
+    <br />
+    <a href="FarmingKit.html">Up</a>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+How to create models
+--------------------
+
+See Models/Template
+
+
+Creating objects from prototypes
+--------------------------------
+
+1. get simulation environment and ask for a prototype
+2. instantiate the prototype
+
+Example:
+
+    prototype = [[self environment] prototypeWithName:@"MyAgentPrototype"];
+    agent = [prototype instantiate];
+
+

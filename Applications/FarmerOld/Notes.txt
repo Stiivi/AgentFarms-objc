@@ -1,0 +1,4 @@
+Lattice info dictionary:
+    Name
+    Identifier
+    Target

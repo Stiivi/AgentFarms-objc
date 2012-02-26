@@ -1,0 +1,109 @@
+<?xml version="1.0"?>
+<!DOCTYPE gsdoc PUBLIC "-//GNUstep//DTD gsdoc 1.0.0//EN" "http://www.gnustep.org/gsdoc-1_0_0.xml">
+<gsdoc base="AFGraph" up="FarmingKit">
+  <head>
+    <title>AFGraph class documentation</title>
+    <author name="Stefan Urbanek">
+      <email address="urbanek@host.sk">
+        urbanek@host.sk
+      </email>
+    </author>
+    <copy>2002 Stefan Urbanek</copy>
+  </head>
+  <body>
+    <front><contents /></front>
+    <chapter>
+      <heading>
+        Software documentation for the AFGraph class
+      </heading>
+      <class name="AFGraph" super="NSView">
+        <declared>FarmingKit/AFGraph.h</declared>
+        <desc>
+          <em>Description forthcoming.</em>
+        </desc>
+        <method type="void">
+          <sel>addElement:</sel>
+          <arg type="AFGraphElement*">element</arg>
+          <desc>
+            Adds <var>element</var> to the list of receiver's
+            graph elements and notifies associated graph legend
+            view with graphViewDidChangeGraphs:self
+          </desc>
+        </method>
+        <method type="void">
+          <sel>drawInRect:</sel>
+          <arg type="NSRect">frame</arg>
+          <sel>graphWindow:</sel>
+          <arg type="AFRect*">windowRect</arg>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="NSArray*">
+          <sel>elements</sel>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="BOOL">
+          <sel>relativeScale</sel>
+          <desc>
+            Returns whether graph elements are drawn in
+            relative scale.
+          </desc>
+        </method>
+        <method type="void">
+          <sel>removeAllElements</sel>
+          <desc>
+            Removes all elements of receiver and notifies
+            associated graph legend view with
+            graphViewDidChangeGraphs:self
+          </desc>
+        </method>
+        <method type="void">
+          <sel>removeElement:</sel>
+          <arg type="AFGraphElement*">element</arg>
+          <desc>
+            Removes <var>element</var> from the list of
+            receiver's graph elements and notifies
+            associated graph legend view with
+            graphViewDidChangeGraphs:self
+          </desc>
+        </method>
+        <method type="void">
+          <sel>setElements:</sel>
+          <arg type="NSArray*">array</arg>
+          <desc>
+            Sets all elements of receiver to be <var>array</var>
+            and notifies associated graph legend view with
+            graphViewDidChangeGraphs:self
+          </desc>
+        </method>
+        <method type="void">
+          <sel>setRelativeScale:</sel>
+          <arg type="BOOL">flag</arg>
+          <desc>
+            Enable relative scaling when <var>flag</var> is
+            <code>YES</code>. Relative scaling means that all
+            elements are drawn in different scales, so they
+            minimum values are drawn as equal, same for maximum
+            values.
+          </desc>
+        </method>
+        <method type="void">
+          <sel>setTitle:</sel>
+          <arg type="NSString*">aString</arg>
+          <desc>
+            Set graph title to <var>aString</var>
+          </desc>
+        </method>
+        <method type="NSString*">
+          <sel>title</sel>
+          <desc>
+            Returns graph title
+          </desc>
+        </method>
+      </class>
+    </chapter>
+  </body>
+</gsdoc>

@@ -1,0 +1,1 @@
+make debug=yes install && ( cd ../../Farmer; ./run )

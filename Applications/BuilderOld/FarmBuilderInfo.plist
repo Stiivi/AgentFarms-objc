@@ -1,0 +1,22 @@
+{
+  ApplicationName = "Farm Builder";
+  ApplicationDescription = "Agent Farms Builder";
+  ApplicationRelease = "0.1";
+  Authors = ("Stefan Urbanek <stefan@agentfarms.net>");
+  Copyright = "Copyright (c) 2003 Stefan Urbanek <stefan@agentfarms.net>";
+  CopyrightDescription = "This program is released under the GNU General Public License"; 
+
+  /* NSIcon = Ink_app; */
+
+  NSTypes = (
+        {
+             NSUnixExtensions = ("afproject");
+             NSName = "afproject";
+             NSHumanReadableName = "AgentFarms Project";
+             NSMIMETypes = ("application/af-project");
+             NSIcon = afproject;
+             NSRole = Viewer;
+             NSDocumentClass = FarmProjectController;
+        }
+  );
+}

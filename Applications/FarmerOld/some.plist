@@ -1,0 +1,16 @@
+{
+    Name = "Views";
+    Icon = "View";
+    VisibleAtLaunchTime = YES;
+    ObservedNotifications = (
+        { 
+            Name = AFFarmTimeAdvancedNotification;
+            Selector = "updateIfNeeded:";
+        },
+        { 
+            Name = AFFarmDidLaunchNotification;
+            Selector = "updateIfNeeded:";
+        }
+    );
+    Rank = 0; /* Value from 0 to 1000 */
+},

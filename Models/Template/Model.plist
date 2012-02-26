@@ -1,0 +1,110 @@
+{
+    Name = "Template";
+    
+    /* Number of default simulation steps on single run */
+    StepTimeUnits = 100;
+    
+/* Classes */
+
+    Classes =
+    {
+        TemplateWorld = 
+        {
+            Attributes = (
+                {
+                    Identifier = initialAgentCount;
+                    Name = "Agent Count";
+                    ForCreation = YES;
+                },
+                {
+                    Identifier = someVariable;
+                    Name = "Some Variable";
+                },
+                {
+                    Identifier = agentCount;
+                    Name = "Agent count"; 
+                    ReadOnly = YES;
+                }
+            );
+            Relationships = (
+                /*
+                    {
+                        Identifier = objectIdentifier;
+                        Name = "ObjectName"; 
+                    }
+                */
+                /*
+                    {
+                        Identifier = agents;
+                        Name = "agents"; 
+                        Class = Agent;
+                        Type = Collection;
+                    }
+                */                    
+                );
+        };
+        
+        Agent =
+        {
+            Attributes = 
+            (
+                /*
+                {
+                    Identifier = energy;
+                    Name = "Energy";
+                },
+                {
+                    Identifier = tripLength;
+                    Name = "Trip Length"; 
+                    ReadOnly = YES;
+                }
+                */
+            )
+        };
+    };
+    
+/* Prototypes */
+
+    Prototypes = {
+        World = 
+        {
+            Class = TemplateWorld;
+            Attributes = 
+            {
+                initialAgentCount = 10;
+                someVariable = 100.0; 
+            };
+        };
+        /*
+        Agent = 
+        {
+            Class = Agent;
+            Attributes = 
+            {
+                energy     = 100;
+                memorySize = 2;
+            };
+        };
+        */
+    };
+
+/* Simulation Objects */
+
+    Objects = 
+    (    
+        { Name = World; Prototype = "World"; },
+    );
+
+/* Connections */
+
+    Connections = 
+    (
+        /*
+        { 
+            Destination = World; 
+            Relationship = source; 
+            Source = Source;
+        }
+        */
+    );
+}

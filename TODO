@@ -1,0 +1,26 @@
+== Suite
+
+1 optimalise:
+    - reduce inter-process comunication
+    - reduce amount of transferred data between simulator and farmer
+    - cache values in distant simulator proxy
+    
+== Farmer
+
+1 save simulation state
+2 simulation snapshots
+3 multiple simulation runs (into one graph)
+4 prop
+
+BUGS:
+* farm state is set from 3 to 3
+
+== Simulation
+
+1 describe object reference queries
+2 remove object reference dictionary from AFObjectDescription
+
+BUGS:
+* simulator is leaking one NSDictionary object
+
+== Data

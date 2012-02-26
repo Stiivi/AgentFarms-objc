@@ -1,0 +1,3 @@
+killall afsimulator
+touch English.lproj/*.gorm
+make debug=yes check=yes

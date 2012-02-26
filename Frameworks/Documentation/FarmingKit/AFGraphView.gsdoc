@@ -1,0 +1,269 @@
+<?xml version="1.0"?>
+<!DOCTYPE gsdoc PUBLIC "-//GNUstep//DTD gsdoc 1.0.0//EN" "http://www.gnustep.org/gsdoc-1_0_0.xml">
+<gsdoc base="AFGraphView" up="FarmingKit">
+  <head>
+    <title>AFGraphView class documentation</title>
+    <author name="Stefan Urbanek">
+      <email address="urbanek@host.sk">
+        urbanek@host.sk
+      </email>
+    </author>
+    <copy>2002 Stefan Urbanek</copy>
+  </head>
+  <body>
+    <front><contents /></front>
+    <chapter>
+      <heading>
+        Software documentation for the AFGraphView class
+      </heading>
+      <class name="AFGraphView" super="NSView">
+        <declared>FarmingKit/AFGraphView.h</declared>
+        <desc>
+          <em>Description forthcoming.</em>
+        </desc>
+        <method type="void">
+          <sel>addElement:</sel>
+          <arg type="AFGraphElement*">element</arg>
+          <desc>
+            Adds <var>element</var> to the list of receiver's
+            graph elements and notifies associated graph legend
+            view with graphViewDidChangeGraphs:self
+          </desc>
+        </method>
+        <method type="BOOL">
+          <sel>autosizesPadding</sel>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="BOOL">
+          <sel>autosizesRuler</sel>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="NSColor*">
+          <sel>backgroundColor</sel>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="BOOL">
+          <sel>drawsBackground</sel>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="BOOL">
+          <sel>drawsGrid</sel>
+          <desc>
+            Returns <code>YES</code> if the grid is drawn under
+            the graph elements.
+          </desc>
+        </method>
+        <method type="NSArray*">
+          <sel>elements</sel>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="AFGraph*">
+          <sel>graph</sel>
+          <desc>
+            Returns displayed graph.
+          </desc>
+        </method>
+        <method type="NSColor*">
+          <sel>gridColor</sel>
+          <desc>
+            Returns the color of the grid.
+          </desc>
+        </method>
+        <method type="BOOL">
+          <sel>legendVisible</sel>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="NSSize">
+          <sel>paddingSize</sel>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="void">
+          <sel>removeAllElements</sel>
+          <desc>
+            Removes all elements of receiver and notifies
+            associated graph legend view with
+            graphViewDidChangeGraphs:self
+          </desc>
+        </method>
+        <method type="void">
+          <sel>removeElement:</sel>
+          <arg type="AFGraphElement*">element</arg>
+          <desc>
+            Removes <var>element</var> from the list of
+            receiver's graph elements and notifies
+            associated graph legend view with
+            graphViewDidChangeGraphs:self
+          </desc>
+        </method>
+        <method type="NSColor*">
+          <sel>rulerColor</sel>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="NSFont*">
+          <sel>rulerFont</sel>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="NSSize">
+          <sel>rulerSize</sel>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="BOOL">
+          <sel>rulerVisible</sel>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="BOOL">
+          <sel>scalesGraphToFit</sel>
+          <desc>
+            Return whether graph view scales graph window to fit
+            all graph elements.
+          </desc>
+        </method>
+        <method type="void">
+          <sel>setAutosizesPadding:</sel>
+          <arg type="BOOL">flag</arg>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="void">
+          <sel>setAutosizesRuler:</sel>
+          <arg type="BOOL">flag</arg>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="void">
+          <sel>setBackgroundColor:</sel>
+          <arg type="NSColor*">color</arg>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="void">
+          <sel>setDrawsBackground:</sel>
+          <arg type="BOOL">flag</arg>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="void">
+          <sel>setDrawsGrid:</sel>
+          <arg type="BOOL">flag</arg>
+          <desc>
+            If <var>flag</var> is <code>YES</code> then grid is
+            drawn under the graph elements.
+          </desc>
+        </method>
+        <method type="void">
+          <sel>setElements:</sel>
+          <arg type="NSArray*">array</arg>
+          <desc>
+            Sets all elements of receiver to be <var>array</var>
+            and notifies associated graph legend view with
+            graphViewDidChangeGraphs:self
+          </desc>
+        </method>
+        <method type="void">
+          <sel>setGraph:</sel>
+          <arg type="AFGraph*">aGraph</arg>
+          <desc>
+            Sets a graph to be displayed.
+          </desc>
+        </method>
+        <method type="void">
+          <sel>setGridColor:</sel>
+          <arg type="NSColor*">color</arg>
+          <desc>
+            Sets <var>color</var> of the grid.
+          </desc>
+        </method>
+        <method type="void">
+          <sel>setLegendVisible:</sel>
+          <arg type="BOOL">flag</arg>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="void">
+          <sel>setPaddingSize:</sel>
+          <arg type="NSSize">size</arg>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="void">
+          <sel>setRulerColor:</sel>
+          <arg type="NSColor*">color</arg>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="void">
+          <sel>setRulerFont:</sel>
+          <arg type="NSFont*">font</arg>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="void">
+          <sel>setRulerSize:</sel>
+          <arg type="NSSize">size</arg>
+          <desc>
+            Set <var>size</var>
+          </desc>
+        </method>
+        <method type="void">
+          <sel>setRulerVisible:</sel>
+          <arg type="BOOL">flag</arg>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="void">
+          <sel>setScalesGraphToFit:</sel>
+          <arg type="BOOL">flag</arg>
+          <desc>
+            If <var>flag</var> is <code>YES</code> then graph window
+            is scaled to fit all graph elements. If set to
+            <code>NO</code>, then graph window is used.
+          </desc>
+        </method>
+        <method type="void">
+          <sel>setTitle:</sel>
+          <arg type="NSString*">aString</arg>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="NSString*">
+          <sel>title</sel>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+      </class>
+    </chapter>
+  </body>
+</gsdoc>

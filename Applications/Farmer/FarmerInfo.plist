@@ -1,0 +1,127 @@
+{
+  ApplicationName = "Farmer";
+  ApplicationDescription = "Agent Farms simulator";
+  ApplicationRelease = "0.1";
+  Authors = ("Stefan Urbanek <urbanek@host.sk>");
+  Copyright = "Copyright (c) 2000 Stefan Urbanek <urbanek@host.sk>";
+  CopyrightDescription = "This program is released under the GNU General Public License"; 
+
+  /* NSIcon = Ink_app; */
+
+  NSTypes = (
+        {
+             NSUnixExtensions = ("afarm");
+             NSName = "afarm";
+             NSHumanReadableName = "AgentFarms Farm State";
+             NSMIMETypes = ("application/af-farm");
+             NSIcon = afarm;
+             NSRole = Editor;
+             NSDocumentClass = AFFarm;
+        },
+        {
+             NSUnixExtensions = ("afmodel");
+             NSName = "afmodel";
+             NSHumanReadableName = "AgentFarms Model";
+             NSMIMETypes = ("application/af-model");
+             NSIcon = afmodel;
+             NSRole = Viewer;
+             NSDocumentClass = AFFarm;
+        }
+
+    );
+  
+
+    AFFarmAssistants =   
+    (
+        {
+            rank = 0;
+            name  = "Description";
+            class = "DescriptionWindowController";
+            icon  = "Description";
+        },
+        {
+            rank = 10;
+            name = "Prototypes";
+            class = "PrototypesBrowser";
+            icon = "Prototypes";
+            instantiate = NO;
+            visibleAtLaunchTime = NO;
+
+            observedNotifications = (
+                { 
+                    name = AFFarmModelLoadedNotification;
+                    selector = "farmModelLoaded:";
+                }
+            );
+        },
+        {
+            rank = 20;
+            name = "Objects";
+            class = "ObjectBrowser";
+            icon = "Objects";
+            visibleAtLaunchTime = YES;
+
+            observedNotifications = (
+                { 
+                    name = AFFarmTimeAdvancedNotification;
+                    selector = "farmStateChanged:";
+                },
+                { 
+                    name = AFFarmStateChangedNotification;
+                    selector = "farmStateChanged:";
+                }
+            );
+        },
+        {
+            rank = 30;
+            name = "Collections";
+            class = "CollectionBrowser";
+            icon = "Probes";
+            visibleAtLaunchTime = YES;
+            observedNotifications = (
+                { 
+                    name = AFFarmStateChangedNotification;
+                    selector = "farmStateChanged:";
+                },
+                { 
+                    name = AFSimulatorProbesChangedNotification;
+                    selector = "simulatorProbesChanged:";
+                },
+                {
+                    name = AFFarmDidLaunchNotification;
+                    selector = "simulatorProbesChanged:";
+                }
+
+            );
+        },
+        {
+            rank = 40;
+            name = "Views";
+            class = "ViewBrowser";
+            icon = "View";
+            visibleAtLaunchTime = YES;
+            observedNotifications = (
+                { 
+                    name = AFFarmTimeAdvancedNotification;
+                    selector = "updateIfNeeded:";
+                },
+                { 
+                    name = AFFarmDidLaunchNotification;
+                    selector = "updateIfNeeded:";
+                },
+                { 
+                    name = AFFarmDidStopNotification;
+                    selector = "updateIfNeeded:";
+                }
+            );
+        },
+        {
+            name = "Log";
+            class = "FarmLog";
+            icon = "Log";
+            instantiate = YES;
+            visibleAtLaunchTime = YES;
+            rank = 100;
+        }
+    )  
+}

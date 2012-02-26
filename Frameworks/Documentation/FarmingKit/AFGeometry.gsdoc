@@ -1,0 +1,225 @@
+<?xml version="1.0"?>
+<!DOCTYPE gsdoc PUBLIC "-//GNUstep//DTD gsdoc 1.0.0//EN" "http://www.gnustep.org/gsdoc-1_0_0.xml">
+<gsdoc base="AFGeometry" up="FarmingKit">
+  <head>
+    <title>AFGeometry autogsdoc generated documentation</title>
+    <author name="Stefan Urbanek">
+      <email address="urbanek@host.sk">
+        urbanek@host.sk
+      </email>
+    </author>
+    <copy>2002 Stefan Urbanek</copy>
+  </head>
+  <body>
+    <front><contents /></front>
+    <chapter>
+      <heading>
+        Software documentation for the AFPoint class
+      </heading>
+      <class name="AFPoint" super="NSObject">
+        <declared>FarmingKit/AFGeometry.h</declared>
+        <desc>
+          <em>Description forthcoming.</em>
+        </desc>
+        <ivariable type="double" name="x" validity="public">
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </ivariable>
+        <ivariable type="double" name="y" validity="public">
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </ivariable>
+        <method type="id" factory="yes">
+          <sel>pointWithX:</sel>
+          <arg type="double">nx</arg>
+          <sel>y:</sel>
+          <arg type="double">ny</arg>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="id">
+          <sel>initWithX:</sel>
+          <arg type="double">nx</arg>
+          <sel>y:</sel>
+          <arg type="double">ny</arg>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="double">
+          <sel>x</sel>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="double">
+          <sel>y</sel>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+      </class>
+    </chapter>
+    <chapter>
+      <heading>
+        Software documentation for the AFRect class
+      </heading>
+      <class name="AFRect" super="NSObject">
+        <declared>FarmingKit/AFGeometry.h</declared>
+        <desc>
+          <em>Description forthcoming.</em>
+        </desc>
+        <ivariable type="AFPoint*" name="origin" validity="public">
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </ivariable>
+        <ivariable type="AFSize*" name="size" validity="public">
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </ivariable>
+        <method type="id" factory="yes">
+          <sel>rectWithMinX:</sel>
+          <arg type="double">xmin</arg>
+          <sel>minY:</sel>
+          <arg type="double">ymin</arg>
+          <sel>maxX:</sel>
+          <arg type="double">xmax</arg>
+          <sel>maxY:</sel>
+          <arg type="double">ymax</arg>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="id" factory="yes">
+          <sel>rectWithOrigin:</sel>
+          <arg type="AFPoint*">o</arg>
+          <sel>size:</sel>
+          <arg type="AFSize*">s</arg>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="id">
+          <sel>initWithMinX:</sel>
+          <arg type="double">xmin</arg>
+          <sel>minY:</sel>
+          <arg type="double">ymin</arg>
+          <sel>maxX:</sel>
+          <arg type="double">xmax</arg>
+          <sel>maxY:</sel>
+          <arg type="double">ymax</arg>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="id">
+          <sel>initWithOrigin:</sel>
+          <arg type="AFPoint*">o</arg>
+          <sel>size:</sel>
+          <arg type="AFSize*">s</arg>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="AFRect*">
+          <sel>intersectWithRect:</sel>
+          <arg type="AFRect*">aRect</arg>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="AFPoint*">
+          <sel>origin</sel>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="AFRect*">
+          <sel>rectByTranslatingX:</sel>
+          <arg type="double">xoff</arg>
+          <sel>y:</sel>
+          <arg type="double">yoff</arg>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="AFRect*">
+          <sel>rectByZoom:</sel>
+          <arg type="double">factor</arg>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="AFSize*">
+          <sel>size</sel>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="AFRect*">
+          <sel>unionWithRect:</sel>
+          <arg type="AFRect*">arect</arg>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+      </class>
+    </chapter>
+    <chapter>
+      <heading>
+        Software documentation for the AFSize class
+      </heading>
+      <class name="AFSize" super="NSObject">
+        <declared>FarmingKit/AFGeometry.h</declared>
+        <desc>
+          <em>Description forthcoming.</em>
+        </desc>
+        <ivariable type="double" name="height" validity="public">
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </ivariable>
+        <ivariable type="double" name="width" validity="public">
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </ivariable>
+        <method type="id" factory="yes">
+          <sel>sizeWithWidth:</sel>
+          <arg type="double">w</arg>
+          <sel>height:</sel>
+          <arg type="double">h</arg>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="double">
+          <sel>height</sel>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="id">
+          <sel>initWithWidth:</sel>
+          <arg type="double">w</arg>
+          <sel>height:</sel>
+          <arg type="double">h</arg>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+        <method type="double">
+          <sel>width</sel>
+          <desc>
+            <em>Description forthcoming.</em>
+          </desc>
+        </method>
+      </class>
+    </chapter>
+  </body>
+</gsdoc>

@@ -1,0 +1,6 @@
+Simulation
+    simulation name (if not set, model name is used)
+SimulationClass 
+    simulation class name
+    If not set, then AFSimulationClass or principal class is used.
+    

@@ -1,0 +1,620 @@
+{
+    class = {
+	AFButtonRow = AFButtonRow;
+	AFColorMap = AFColorMap;
+	AFFarmStore = AFFarmStore;
+	AFGraph = AFGraph;
+	AFGraphElement = AFGraphElement;
+	AFGraphView = AFGraphView;
+	AFGraphWindow = AFGraphWindow;
+	AFLatticeView = AFLatticeView;
+	AFPoint = AFGeometry;
+	AFRect = AFGeometry;
+	AFSequenceGraphElement = AFSequenceGraphElement;
+	AFSize = AFGeometry;
+    };
+    classvars = {
+	AFPoint = {
+	    x = AFGeometry;
+	    y = AFGeometry;
+	};
+	AFRect = {
+	    origin = AFGeometry;
+	    size = AFGeometry;
+	};
+	AFSize = {
+	    height = AFGeometry;
+	    width = AFGeometry;
+	};
+    };
+    ivariable = {
+	height = {
+	    AFSize = AFGeometry;
+	};
+	origin = {
+	    AFRect = AFGeometry;
+	};
+	size = {
+	    AFRect = AFGeometry;
+	};
+	width = {
+	    AFSize = AFGeometry;
+	};
+	x = {
+	    AFPoint = AFGeometry;
+	};
+	y = {
+	    AFPoint = AFGeometry;
+	};
+    };
+    method = {
+	"+colorMapWithGrayGrades:" = {
+	    AFColorMap = AFColorMap;
+	};
+	"+defaultColor" = {
+	    AFGraphElement = AFGraphElement;
+	};
+	"+elementWithCollection:" = {
+	    AFSequenceGraphElement = AFSequenceGraphElement;
+	};
+	"+pointWithX:y:" = {
+	    AFPoint = AFGeometry;
+	};
+	"+rectWithMinX:minY:maxX:maxY:" = {
+	    AFRect = AFGeometry;
+	};
+	"+rectWithOrigin:size:" = {
+	    AFRect = AFGeometry;
+	};
+	"+setDefaultColor:" = {
+	    AFGraphElement = AFGraphElement;
+	};
+	"+sizeWithWidth:height:" = {
+	    AFSize = AFGeometry;
+	};
+	"+storeWithPath:create:" = {
+	    AFFarmStore = AFFarmStore;
+	};
+	"-addBu:withIdentifier:" = {
+	    AFButtonRow = AFButtonRow;
+	};
+	"-addButtonWithTitle:image:representedObject:" = {
+	    AFButtonRow = AFButtonRow;
+	};
+	"-addElement:" = {
+	    AFGraph = AFGraph;
+	    AFGraphView = AFGraphView;
+	};
+	"-applyToGraphView:" = {
+	    AFGraphWindow = AFGraphWindow;
+	};
+	"-applyToGraphViews:" = {
+	    AFGraphWindow = AFGraphWindow;
+	};
+	"-autosizesPadding" = {
+	    AFGraphView = AFGraphView;
+	};
+	"-autosizesRuler" = {
+	    AFGraphView = AFGraphView;
+	};
+	"-backgroundColor" = {
+	    AFGraphView = AFGraphView;
+	};
+	"-bounds" = {
+	    AFGraphElement = AFGraphElement;
+	};
+	"-collection" = {
+	    AFSequenceGraphElement = AFSequenceGraphElement;
+	};
+	"-color" = {
+	    AFGraphElement = AFGraphElement;
+	};
+	"-colorAtIndex:" = {
+	    AFColorMap = AFColorMap;
+	};
+	"-colorMap" = {
+	    AFLatticeView = AFLatticeView;
+	};
+	"-commit" = {
+	    AFFarmStore = AFFarmStore;
+	};
+	"-count" = {
+	    AFColorMap = AFColorMap;
+	};
+	"-create" = {
+	    AFFarmStore = AFFarmStore;
+	};
+	"-drawInRect:graphWindow:" = {
+	    AFGraph = AFGraph;
+	};
+	"-drawLegendSampleInRect:" = {
+	    AFGraphElement = AFGraphElement;
+	};
+	"-drawsBackground" = {
+	    AFGraphView = AFGraphView;
+	};
+	"-drawsGrid" = {
+	    AFGraphView = AFGraphView;
+	};
+	"-elements" = {
+	    AFGraph = AFGraph;
+	    AFGraphView = AFGraphView;
+	};
+	"-graph" = {
+	    AFGraphView = AFGraphView;
+	};
+	"-gridColor" = {
+	    AFGraphView = AFGraphView;
+	};
+	"-height" = {
+	    AFSize = AFGeometry;
+	};
+	"-initWithCollection:" = {
+	    AFSequenceGraphElement = AFSequenceGraphElement;
+	};
+	"-initWithGrayGrades:" = {
+	    AFColorMap = AFColorMap;
+	};
+	"-initWithMinX:minY:maxX:maxY:" = {
+	    AFRect = AFGeometry;
+	};
+	"-initWithOrigin:size:" = {
+	    AFRect = AFGeometry;
+	};
+	"-initWithPath:create:" = {
+	    AFFarmStore = AFFarmStore;
+	};
+	"-initWithWidth:height:" = {
+	    AFSize = AFGeometry;
+	};
+	"-initWithX:y:" = {
+	    AFPoint = AFGeometry;
+	};
+	"-intersectWithRect:" = {
+	    AFRect = AFGeometry;
+	};
+	"-label" = {
+	    AFGraphElement = AFGraphElement;
+	};
+	"-lattice" = {
+	    AFLatticeView = AFLatticeView;
+	};
+	"-legendVisible" = {
+	    AFGraphView = AFGraphView;
+	};
+	"-lineDashType" = {
+	    AFGraphElement = AFGraphElement;
+	};
+	"-lineWidth" = {
+	    AFGraphElement = AFGraphElement;
+	};
+	"-maxX" = {
+	    AFGraphElement = AFGraphElement;
+	};
+	"-maxY" = {
+	    AFGraphElement = AFGraphElement;
+	};
+	"-minX" = {
+	    AFGraphElement = AFGraphElement;
+	};
+	"-minY" = {
+	    AFGraphElement = AFGraphElement;
+	};
+	"-objectWithName:" = {
+	    AFFarmStore = AFFarmStore;
+	};
+	"-origin" = {
+	    AFRect = AFGeometry;
+	};
+	"-paddingSize" = {
+	    AFGraphView = AFGraphView;
+	};
+	"-path" = {
+	    AFFarmStore = AFFarmStore;
+	};
+	"-pathForObjectWithName:" = {
+	    AFFarmStore = AFFarmStore;
+	};
+	"-pathForPropertyListWithName:" = {
+	    AFFarmStore = AFFarmStore;
+	};
+	"-propertyListWithName:" = {
+	    AFFarmStore = AFFarmStore;
+	};
+	"-rectByTranslatingX:y:" = {
+	    AFRect = AFGeometry;
+	};
+	"-rectByZoom:" = {
+	    AFRect = AFGeometry;
+	};
+	"-relativeScale" = {
+	    AFGraph = AFGraph;
+	};
+	"-removeAllElements" = {
+	    AFGraph = AFGraph;
+	    AFGraphView = AFGraphView;
+	};
+	"-removeElement:" = {
+	    AFGraph = AFGraph;
+	    AFGraphView = AFGraphView;
+	};
+	"-removeObjectWithIdentifier:" = {
+	    AFButtonRow = AFButtonRow;
+	};
+	"-rulerColor" = {
+	    AFGraphView = AFGraphView;
+	};
+	"-rulerFont" = {
+	    AFGraphView = AFGraphView;
+	};
+	"-rulerSize" = {
+	    AFGraphView = AFGraphView;
+	};
+	"-rulerVisible" = {
+	    AFGraphView = AFGraphView;
+	};
+	"-scalesGraphToFit" = {
+	    AFGraphView = AFGraphView;
+	};
+	"-selectedObject" = {
+	    AFButtonRow = AFButtonRow;
+	};
+	"-setAutosizesPadding:" = {
+	    AFGraphView = AFGraphView;
+	};
+	"-setAutosizesRuler:" = {
+	    AFGraphView = AFGraphView;
+	};
+	"-setBackgroundColor:" = {
+	    AFGraphView = AFGraphView;
+	};
+	"-setColor:" = {
+	    AFGraphElement = AFGraphElement;
+	};
+	"-setColorMap:" = {
+	    AFLatticeView = AFLatticeView;
+	};
+	"-setDrawsBackground:" = {
+	    AFGraphView = AFGraphView;
+	};
+	"-setDrawsGrid:" = {
+	    AFGraphView = AFGraphView;
+	};
+	"-setElements:" = {
+	    AFGraph = AFGraph;
+	    AFGraphView = AFGraphView;
+	};
+	"-setGraph:" = {
+	    AFGraphView = AFGraphView;
+	};
+	"-setGridColor:" = {
+	    AFGraphView = AFGraphView;
+	};
+	"-setLabel:" = {
+	    AFGraphElement = AFGraphElement;
+	};
+	"-setLattice:" = {
+	    AFLatticeView = AFLatticeView;
+	};
+	"-setLegendVisible:" = {
+	    AFGraphView = AFGraphView;
+	};
+	"-setLineDashType:" = {
+	    AFGraphElement = AFGraphElement;
+	};
+	"-setLineWidth:" = {
+	    AFGraphElement = AFGraphElement;
+	};
+	"-setPaddingSize:" = {
+	    AFGraphView = AFGraphView;
+	};
+	"-setPath:" = {
+	    AFFarmStore = AFFarmStore;
+	};
+	"-setRelativeScale:" = {
+	    AFGraph = AFGraph;
+	};
+	"-setRulerColor:" = {
+	    AFGraphView = AFGraphView;
+	};
+	"-setRulerFont:" = {
+	    AFGraphView = AFGraphView;
+	};
+	"-setRulerSize:" = {
+	    AFGraphView = AFGraphView;
+	};
+	"-setRulerVisible:" = {
+	    AFGraphView = AFGraphView;
+	};
+	"-setScalesGraphToFit:" = {
+	    AFGraphView = AFGraphView;
+	};
+	"-setTitle:" = {
+	    AFGraph = AFGraph;
+	    AFGraphView = AFGraphView;
+	};
+	"-setWindowRect:" = {
+	    AFGraphWindow = AFGraphWindow;
+	};
+	"-setWindowType:" = {
+	    AFGraphWindow = AFGraphWindow;
+	};
+	"-size" = {
+	    AFRect = AFGeometry;
+	};
+	"-storeObject:withName:" = {
+	    AFFarmStore = AFFarmStore;
+	};
+	"-storePropertyList:withName:" = {
+	    AFFarmStore = AFFarmStore;
+	};
+	"-title" = {
+	    AFGraph = AFGraph;
+	    AFGraphView = AFGraphView;
+	};
+	"-undefinedColor" = {
+	    AFColorMap = AFColorMap;
+	};
+	"-unionWithRect:" = {
+	    AFRect = AFGeometry;
+	};
+	"-width" = {
+	    AFSize = AFGeometry;
+	};
+	"-windowRect" = {
+	    AFGraphWindow = AFGraphWindow;
+	};
+	"-windowType" = {
+	    AFGraphWindow = AFGraphWindow;
+	};
+	"-x" = {
+	    AFPoint = AFGeometry;
+	};
+	"-y" = {
+	    AFPoint = AFGeometry;
+	};
+    };
+    output = {
+	AFButtonRow.h = (
+	    ../Documentation/FarmingKit/AFButtonRow.gsdoc
+	);
+	AFColorMap.h = (
+	    ../Documentation/FarmingKit/AFColorMap.gsdoc
+	);
+	AFFarmStore.h = (
+	    ../Documentation/FarmingKit/AFFarmStore.gsdoc
+	);
+	AFGeometry.h = (
+	    ../Documentation/FarmingKit/AFGeometry.gsdoc,
+	    ../Documentation/FarmingKit/Variables.gsdoc
+	);
+	AFGraph.h = (
+	    ../Documentation/FarmingKit/AFGraph.gsdoc
+	);
+	AFGraphElement.h = (
+	    ../Documentation/FarmingKit/AFGraphElement.gsdoc
+	);
+	AFGraphView.h = (
+	    ../Documentation/FarmingKit/AFGraphView.gsdoc
+	);
+	AFGraphWindow.h = (
+	    ../Documentation/FarmingKit/AFGraphWindow.gsdoc
+	);
+	AFLatticeView.h = (
+	    ../Documentation/FarmingKit/AFLatticeView.gsdoc
+	);
+	AFSequenceGraphElement.h = (
+	    ../Documentation/FarmingKit/AFSequenceGraphElement.gsdoc
+	);
+    };
+    source = {
+	AFButtonRow.h = (
+	    AFButtonRow.m
+	);
+	AFColorMap.h = (
+	    AFColorMap.m
+	);
+	AFFarmStore.h = (
+	    AFFarmStore.m
+	);
+	AFGeometry.h = (
+	    AFGeometry.m
+	);
+	AFGraph.h = (
+	    AFGraph.m
+	);
+	AFGraphElement.h = (
+	    AFGraphElement.m
+	);
+	AFGraphView.h = (
+	    AFGraphView.m
+	);
+	AFGraphWindow.h = (
+	    AFGraphWindow.m
+	);
+	AFLatticeView.h = (
+	    AFLatticeView.m
+	);
+	AFSequenceGraphElement.h = (
+	    AFSequenceGraphElement.m
+	);
+    };
+    super = {
+	AFButtonRow = NSView;
+	AFColorMap = NSView;
+	AFFarmStore = NSObject;
+	AFGraph = NSView;
+	AFGraphElement = NSObject;
+	AFGraphView = NSView;
+	AFGraphWindow = NSObject;
+	AFLatticeView = NSView;
+	AFPoint = NSObject;
+	AFRect = NSObject;
+	AFSequenceGraphElement = AFGraphElement;
+	AFSize = NSObject;
+    };
+    title = {
+	AFButtonRow = "AFButtonRow class documentation";
+	AFColorMap = "AFColorMap class documentation";
+	AFFarmStore = "AFFarmStore class documentation";
+	AFGeometry = "AFGeometry autogsdoc generated documentation";
+	AFGraph = "AFGraph class documentation";
+	AFGraphElement = "AFGraphElement class documentation";
+	AFGraphView = "AFGraphView class documentation";
+	AFGraphWindow = "AFGraphWindow class documentation";
+	AFLatticeView = "AFLatticeView class documentation";
+	AFSequenceGraphElement = "AFSequenceGraphElement class documentation";
+	AgentFarms = FarmingKit;
+	Types = Typedefs;
+	Variables = Variables;
+    };
+    type = {
+	AFPointStruct = Types;
+	AFRectStruct = Types;
+	AFSizeStruct = Types;
+    };
+    unitmethods = {
+	AFButtonRow = {
+	    "-addBu:withIdentifier:" = AFButtonRow;
+	    "-addButtonWithTitle:image:representedObject:" = AFButtonRow;
+	    "-removeObjectWithIdentifier:" = AFButtonRow;
+	    "-selectedObject" = AFButtonRow;
+	};
+	AFColorMap = {
+	    "+colorMapWithGrayGrades:" = AFColorMap;
+	    "-colorAtIndex:" = AFColorMap;
+	    "-count" = AFColorMap;
+	    "-initWithGrayGrades:" = AFColorMap;
+	    "-undefinedColor" = AFColorMap;
+	};
+	AFFarmStore = {
+	    "+storeWithPath:create:" = AFFarmStore;
+	    "-commit" = AFFarmStore;
+	    "-create" = AFFarmStore;
+	    "-initWithPath:create:" = AFFarmStore;
+	    "-objectWithName:" = AFFarmStore;
+	    "-path" = AFFarmStore;
+	    "-pathForObjectWithName:" = AFFarmStore;
+	    "-pathForPropertyListWithName:" = AFFarmStore;
+	    "-propertyListWithName:" = AFFarmStore;
+	    "-setPath:" = AFFarmStore;
+	    "-storeObject:withName:" = AFFarmStore;
+	    "-storePropertyList:withName:" = AFFarmStore;
+	};
+	AFGraph = {
+	    "-addElement:" = AFGraph;
+	    "-drawInRect:graphWindow:" = AFGraph;
+	    "-elements" = AFGraph;
+	    "-relativeScale" = AFGraph;
+	    "-removeAllElements" = AFGraph;
+	    "-removeElement:" = AFGraph;
+	    "-setElements:" = AFGraph;
+	    "-setRelativeScale:" = AFGraph;
+	    "-setTitle:" = AFGraph;
+	    "-title" = AFGraph;
+	};
+	AFGraphElement = {
+	    "+defaultColor" = AFGraphElement;
+	    "+setDefaultColor:" = AFGraphElement;
+	    "-bounds" = AFGraphElement;
+	    "-color" = AFGraphElement;
+	    "-drawLegendSampleInRect:" = AFGraphElement;
+	    "-label" = AFGraphElement;
+	    "-lineDashType" = AFGraphElement;
+	    "-lineWidth" = AFGraphElement;
+	    "-maxX" = AFGraphElement;
+	    "-maxY" = AFGraphElement;
+	    "-minX" = AFGraphElement;
+	    "-minY" = AFGraphElement;
+	    "-setColor:" = AFGraphElement;
+	    "-setLabel:" = AFGraphElement;
+	    "-setLineDashType:" = AFGraphElement;
+	    "-setLineWidth:" = AFGraphElement;
+	};
+	AFGraphView = {
+	    "-addElement:" = AFGraphView;
+	    "-autosizesPadding" = AFGraphView;
+	    "-autosizesRuler" = AFGraphView;
+	    "-backgroundColor" = AFGraphView;
+	    "-drawsBackground" = AFGraphView;
+	    "-drawsGrid" = AFGraphView;
+	    "-elements" = AFGraphView;
+	    "-graph" = AFGraphView;
+	    "-gridColor" = AFGraphView;
+	    "-legendVisible" = AFGraphView;
+	    "-paddingSize" = AFGraphView;
+	    "-removeAllElements" = AFGraphView;
+	    "-removeElement:" = AFGraphView;
+	    "-rulerColor" = AFGraphView;
+	    "-rulerFont" = AFGraphView;
+	    "-rulerSize" = AFGraphView;
+	    "-rulerVisible" = AFGraphView;
+	    "-scalesGraphToFit" = AFGraphView;
+	    "-setAutosizesPadding:" = AFGraphView;
+	    "-setAutosizesRuler:" = AFGraphView;
+	    "-setBackgroundColor:" = AFGraphView;
+	    "-setDrawsBackground:" = AFGraphView;
+	    "-setDrawsGrid:" = AFGraphView;
+	    "-setElements:" = AFGraphView;
+	    "-setGraph:" = AFGraphView;
+	    "-setGridColor:" = AFGraphView;
+	    "-setLegendVisible:" = AFGraphView;
+	    "-setPaddingSize:" = AFGraphView;
+	    "-setRulerColor:" = AFGraphView;
+	    "-setRulerFont:" = AFGraphView;
+	    "-setRulerSize:" = AFGraphView;
+	    "-setRulerVisible:" = AFGraphView;
+	    "-setScalesGraphToFit:" = AFGraphView;
+	    "-setTitle:" = AFGraphView;
+	    "-title" = AFGraphView;
+	};
+	AFGraphWindow = {
+	    "-applyToGraphView:" = AFGraphWindow;
+	    "-applyToGraphViews:" = AFGraphWindow;
+	    "-setWindowRect:" = AFGraphWindow;
+	    "-setWindowType:" = AFGraphWindow;
+	    "-windowRect" = AFGraphWindow;
+	    "-windowType" = AFGraphWindow;
+	};
+	AFLatticeView = {
+	    "-colorMap" = AFLatticeView;
+	    "-lattice" = AFLatticeView;
+	    "-setColorMap:" = AFLatticeView;
+	    "-setLattice:" = AFLatticeView;
+	};
+	AFPoint = {
+	    "+pointWithX:y:" = AFGeometry;
+	    "-initWithX:y:" = AFGeometry;
+	    "-x" = AFGeometry;
+	    "-y" = AFGeometry;
+	};
+	AFRect = {
+	    "+rectWithMinX:minY:maxX:maxY:" = AFGeometry;
+	    "+rectWithOrigin:size:" = AFGeometry;
+	    "-initWithMinX:minY:maxX:maxY:" = AFGeometry;
+	    "-initWithOrigin:size:" = AFGeometry;
+	    "-intersectWithRect:" = AFGeometry;
+	    "-origin" = AFGeometry;
+	    "-rectByTranslatingX:y:" = AFGeometry;
+	    "-rectByZoom:" = AFGeometry;
+	    "-size" = AFGeometry;
+	    "-unionWithRect:" = AFGeometry;
+	};
+	AFSequenceGraphElement = {
+	    "+elementWithCollection:" = AFSequenceGraphElement;
+	    "-collection" = AFSequenceGraphElement;
+	    "-initWithCollection:" = AFSequenceGraphElement;
+	};
+	AFSize = {
+	    "+sizeWithWidth:height:" = AFGeometry;
+	    "-height" = AFGeometry;
+	    "-initWithWidth:height:" = AFGeometry;
+	    "-width" = AFGeometry;
+	};
+    };
+    variable = {
+	AFNullPoint = Variables;
+	AFNullRect = Variables;
+	AFNullSize = Variables;
+    };
+}

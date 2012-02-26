@@ -1,0 +1,29 @@
+Installation
+------------
+
+Make and install whole suite (without models):
+  make
+  make install
+
+Then make and install example model. For example:
+
+
+  cd Models/
+  cd SourceFinder
+  make 
+  make install
+
+(or you can try the Template model)
+
+Finally launch the application
+
+  openapp Farmer.app
+
+Documentation (not yet)
+-------------
+To create the documentation in Documentation directory type:
+
+  make doc=yes
+
+
+Note: This needs to be fixed.

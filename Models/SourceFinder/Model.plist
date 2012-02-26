@@ -1,0 +1,237 @@
+{
+    Name = "Source Finder";
+    
+    StepTimeUnits = 25;
+    
+/* Classes */
+
+    Classes =
+    {
+        SourceFinderSimulation = 
+        {
+            Attributes = (
+                {
+                    Identifier = gridWidth;
+                    Name = "Grid Width";
+                    ForCreation = YES;
+                },
+                {
+                    Identifier = gridHeight;
+                    Name = "Grid Height";
+                    ForCreation = YES;
+                },
+                {
+                    Identifier = sourceX;
+                    Name = "Source X";
+                },
+                {
+                    Identifier = sourceY;
+                    Name = "Source Y"; 
+                },
+                {
+                    Identifier = initialAgentCount;
+                    Name = "Agent count"; 
+                    ForCreation = YES;
+                },
+                {
+                    Identifier = agentCount;
+                    Name = "Agent count"; 
+                    ReadOnly = YES;
+                },
+                {
+                    Identifier = moveEnergy;  
+                    Name       = "Move Energy"; 
+                },
+                {
+                    Identifier = divideEnergy;
+                    Name = "Divide Energy";
+                },
+                {
+                    Identifier = sourceDrain;
+                    Name = "Source Drain";
+                },
+                {
+                    Identifier = deadAgents;
+                    Name = "Dead Agents";
+                    ReadOnly = YES;
+                },
+                {
+                    Identifier = bornAgents;
+                    Name = "Born Agents";
+                    ReadOnly = YES;
+                },
+                {
+                    Identifier = averageEnergy;
+                    Name = "Average energy";
+                    ReadOnly = YES;
+                }
+            );
+            Relationships = (
+                    {
+                        Identifier = source;
+                        Name = "source"; 
+                    },
+                    {
+                        Identifier = agents;
+                        Name = "agents"; 
+                        Type = Collection;
+                        Class = WalkingAgent;
+                    }
+                );
+        };
+        
+        WalkingAgent =
+        {
+            Attributes = 
+            (
+                {
+                    Identifier = energy;
+                    Name = "Energy";
+                },
+                {
+                    Identifier = memorySize;
+                    Name = "Memory Size";
+                },
+                {
+                    Identifier = tripLength;
+                    Name = "Trip Length"; 
+                    ReadOnly = YES;
+                }
+            )
+        };
+        
+        EnergySource = 
+        {
+            Attributes = (
+                {
+                    Identifier = energy;
+                    Name = "Energy";
+                },
+                {
+                    Identifier = refill;
+                    Name = "Refill";
+                }
+            )
+        };
+    };
+    
+/* Objects */
+
+    Prototypes = {
+        World = {
+            Class = SourceFinderSimulation;
+            Attributes = {
+                gridWidth         = 10;
+                gridHeight        = 10;
+                sourceX           = 5;
+                sourceY           = 5;
+                initialAgentCount = 100;
+                initialAgentEnergy = 100;
+                moveEnergy        = 1;
+                divideEnergy      = 200;
+                sourceDrain       = 100;                
+            };
+        };
+        Source = 
+        {
+            Class = EnergySource;
+            Attributes = {
+                energy = 10000;
+                refill = 1000;
+            };
+        };
+        Agent = 
+        {
+            Class = WalkingAgent;
+            Attributes = 
+            {
+                energy     = 100;
+                memorySize = 2;
+            };
+        };
+    };
+
+/* Named Objects */
+    Objects = 
+    (    
+        { Name = World; Prototype = "World"; },
+        { Name = Source; Prototype = "Source"; }
+    );
+
+/* Connections */
+
+    Connections = 
+    (
+        { 
+            Destination = World; 
+            Relationship = source; 
+            Source = Source;
+        }
+    );
+
+    RootObject = Simulation;
+
+    Probes = 
+    (
+        {
+            Target = World;
+            Property = agentCount;
+        },
+        {
+            Target = World;
+            Property = deadAgents;
+        },
+        {
+            Target = World;
+            Property = bornAgents;
+        },
+        {
+            Target = Source;
+            Property = energy;
+        },
+        {
+            Target = World;
+            Property = averageEnergy;
+        }
+    );
+
+/* Garbage */
+
+    Graphs = 
+    (
+        {
+            Title = "Agent Count";
+            Probes = (agentCount);
+        },
+        {
+            Title = "Average Energy";
+            Probes = (averageEnergy);
+        },
+        {
+            Title = "Average Trip Length";
+            Probes = (averageTripLength);
+        },
+        {
+            Title = "Source Energy";
+            Probes = (sourceEnergy);
+        },
+        {
+            Title = "Population change";
+            Probes = (bornAgents, deadAgents);
+        }
+    );
+
+    Views = (
+        {
+            Target = World;
+            Name = "World View";
+            Identifier = worldLattice;
+            Type = Lattice;
+        }
+    );
+
+    Authors = ("Stefan Urbanek <urbanek@host.sk>");
+    ShortDescription = "Blah";
+    Version = "1.0";
+    Copyright = ("(c)2002-2003, Stefan Urbanek");
+}

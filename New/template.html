@@ -1,0 +1,43 @@
+<html>
+<body>
+
+<h1>[[name]]</h1>
+
+<h2>Objects</h2>
+    <table border=1>
+    <tr><th>Object name<th>Prototype
+    [[foreach object objects]]
+    <tr><td>[[object.Name]]<td>[[object.Prototype]]
+    [[end]]
+    </table>
+
+<h2>Connections</h2>
+    <table border=1>
+    <tr><th>From<th>To<th>Relationship
+    [[foreach conn connections]]
+    <tr><td>[[conn.sourceName]]<td>[[conn.destinationName]]<td>[[conn.relationshipName]]
+    [[end]]
+    </table>
+
+<h2>Prototypes</h2>
+    [[foreach proto prototypes.allKeys]]
+    <h3>[[proto]]</h3>
+    [[end]]
+
+<h2>Classes</h2>
+    <table border=1>
+    [[foreach class classDescriptions]]
+    <h3>[[class.name]]</h3>
+
+        <table border=1>
+        <tr><th>Attribute<th>Identifier
+        [[foreach attrib class.attributes]]
+        <tr><td>x[[attrib.className]]<td>[[attrib.identifier]]
+        [[end]]
+        </table>
+
+    [[end]]
+
+
+</body>
+</html>

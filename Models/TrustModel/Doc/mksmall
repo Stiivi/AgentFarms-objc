@@ -1,0 +1,6 @@
+#!/bin/csh
+
+foreach f (t*.jpg)
+    echo $f
+    convert -geometry 20% $f s_$f
+end

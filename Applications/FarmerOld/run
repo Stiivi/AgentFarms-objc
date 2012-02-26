@@ -1,0 +1,4 @@
+setenv NSZombieEnabled YES
+killall afsimulator
+touch English.lproj/*.gorm
+make debug=yes && openapp Farmer.debug

@@ -1,0 +1,4 @@
+plparse Model.plist \
+    && make debug=yes \
+    && afvalidator SourceFinder.afmodel \
+    && gopen SourceFinder.afmodel

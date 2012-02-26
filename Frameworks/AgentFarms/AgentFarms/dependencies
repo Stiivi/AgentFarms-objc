@@ -1,0 +1,8 @@
+AgentFarms/dependencies: \
+	NSArray+additions.h \
+	AFGrid.h \
+	NSArray+additions.m \
+	AFGrid.m \
+	NSEnumerator+additions.m \
+	AFAgentAction.h \
+	AFAgentAction.m

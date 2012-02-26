@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<!DOCTYPE gsdoc PUBLIC "-//GNUstep//DTD gsdoc 0.6.7//EN" "http://www.gnustep.org/gsdoc-0_6_7.xml">
+<gsdoc base="AgentFarms">
+
+<head>
+    <title>AgentFarms</title>
+
+    <author name="Stefan Urbanek">
+        <email address="urbanek@host.sk"/>
+        <url url="http://urbanek.host.sk"/>
+    </author>
+
+    <version>0.0.0</version>
+
+    <date>2002 Nov 13</date>
+</head>
+
+<body>
+
+<chapter>
+<heading>Introduction</heading>
+
+<p>
+        
+
+</p>
+</chapter>
+ 
+
+<back>
+    <index scope="project" type="title" />
+    <index scope="project" type="class" />
+    <index scope="project" type="protocol" />
+</back>
+
+</body>
+</gsdoc>

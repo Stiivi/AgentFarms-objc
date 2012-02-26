@@ -1,0 +1,154 @@
+<html>
+
+    <head>
+    <title>AFFarmStore class documentation</title>
+  </head>
+  <body>
+    <a href="FarmingKit.html">Up</a>
+    <br />
+    <h1><a name="title$AFFarmStore">AFFarmStore class documentation</a></h1>
+    <h3>Authors</h3>
+    <dl>
+      <dt>Stefan Urbanek</dt>
+      <dd>
+      </dd>
+    </dl>
+    <p><b>Copyright:</b> (C) 2002 Stefan Urbanek</p>
+
+        <div>
+    </div>
+
+          <h1><a name="001000000000">
+        Software documentation for the AFFarmStore class
+      </a></h1>
+    <h2><a name="class$AFFarmStore">AFFarmStore</a> : NSObject</h2>
+    <blockquote>
+      <dl>
+        <dt><b>Declared in:</b></dt>
+        <dd>FarmingKit/AFFarmStore.h</dd>
+      </dl>
+    </blockquote>
+    <p>
+      
+          <em>Description forthcoming.</em>
+        
+    </p>
+    <b>Method summary</b>
+    <ul>
+      <li><a rel="gsdoc" href="AFFarmStore.html#method$AFFarmStore+storeWithPath:create:">+storeWithPath:create:</a></li>
+      <li><a rel="gsdoc" href="AFFarmStore.html#method$AFFarmStore-commit">-commit</a></li>
+      <li><a rel="gsdoc" href="AFFarmStore.html#method$AFFarmStore-create">-create</a></li>
+      <li><a rel="gsdoc" href="AFFarmStore.html#method$AFFarmStore-initWithPath:create:">-initWithPath:create:</a></li>
+      <li><a rel="gsdoc" href="AFFarmStore.html#method$AFFarmStore-objectWithName:">-objectWithName:</a></li>
+      <li><a rel="gsdoc" href="AFFarmStore.html#method$AFFarmStore-path">-path</a></li>
+      <li><a rel="gsdoc" href="AFFarmStore.html#method$AFFarmStore-pathForObjectWithName:">-pathForObjectWithName:</a></li>
+      <li><a rel="gsdoc" href="AFFarmStore.html#method$AFFarmStore-pathForPropertyListWithName:">-pathForPropertyListWithName:</a></li>
+      <li><a rel="gsdoc" href="AFFarmStore.html#method$AFFarmStore-propertyListWithName:">-propertyListWithName:</a></li>
+      <li><a rel="gsdoc" href="AFFarmStore.html#method$AFFarmStore-setPath:">-setPath:</a></li>
+      <li><a rel="gsdoc" href="AFFarmStore.html#method$AFFarmStore-storeObject:withName:">-storeObject:withName:</a></li>
+      <li><a rel="gsdoc" href="AFFarmStore.html#method$AFFarmStore-storePropertyList:withName:">-storePropertyList:withName:</a></li>
+    </ul>
+    <hr width="50%" align="left" />
+    <h3><a name="method$AFFarmStore+storeWithPath:create:">storeWithPath:create:</a></h3>
+    + (id) <b>storeWithPath:</b> (NSString*)aPath<b> create:</b> (BOOL)flag;<br />
+    <p>
+      
+            <em>Description forthcoming.</em>
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$AFFarmStore-commit">commit</a></h3>
+    - (void) <b>commit</b>;<br />
+    <p>
+      
+            Save all objects and property lists. Not used yet,
+            only for saving commit count.
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$AFFarmStore-create">create</a></h3>
+    - (BOOL) <b>create</b>;<br />
+    <p>
+      
+            <em>Description forthcoming.</em>
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$AFFarmStore-initWithPath:create:">initWithPath:create:</a></h3>
+    - (id) <b>initWithPath:</b> (NSString*)aPath<b> create:</b> (BOOL)create;<br />
+    <p>
+      
+            Init
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$AFFarmStore-objectWithName:">objectWithName:</a></h3>
+    - (id) <b>objectWithName:</b> (NSString*)objectName;<br />
+    <p>
+      
+            Restore and return an object.
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$AFFarmStore-path">path</a></h3>
+    - (NSString*) <b>path</b>;<br />
+    <p>
+      
+            Returns store path
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$AFFarmStore-pathForObjectWithName:">pathForObjectWithName:</a></h3>
+    - (NSString*) <b>pathForObjectWithName:</b> (NSString*)aString;<br />
+    <p>
+      
+            <em>Description forthcoming.</em>
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$AFFarmStore-pathForPropertyListWithName:">pathForPropertyListWithName:</a></h3>
+    - (NSString*) <b>pathForPropertyListWithName:</b> (NSString*)aString;<br />
+    <p>
+      
+            <em>Description forthcoming.</em>
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$AFFarmStore-propertyListWithName:">propertyListWithName:</a></h3>
+    - (id) <b>propertyListWithName:</b> (NSString*)plistName;<br />
+    <p>
+      
+            Restore and return a property list with given name.
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$AFFarmStore-setPath:">setPath:</a></h3>
+    - (BOOL) <b>setPath:</b> (NSString*)aPath;<br />
+    <p>
+      
+            Set store path. Path should not be <code>nil</code> or
+            an empty string. If path does not have
+            <code>.afarm</code> extension, it will be added.
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$AFFarmStore-storeObject:withName:">storeObject:withName:</a></h3>
+    - (BOOL) <b>storeObject:</b> (id)anObject<b> withName:</b> (NSString*)objectName;<br />
+    <p>
+      
+            <em>Description forthcoming.</em>
+          
+    </p>
+    <hr width="25%" align="left" />
+    <h3><a name="method$AFFarmStore-storePropertyList:withName:">storePropertyList:withName:</a></h3>
+    - (BOOL) <b>storePropertyList:</b> (id)plist<b> withName:</b> (NSString*)plistName;<br />
+    <p>
+      
+            <em>Description forthcoming.</em>
+          
+    </p>
+    <hr width="25%" align="left" />
+    <br />
+    <a href="FarmingKit.html">Up</a>
+  </body>
+</html>
